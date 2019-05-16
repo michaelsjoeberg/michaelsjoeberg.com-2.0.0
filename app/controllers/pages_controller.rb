@@ -1,13 +1,6 @@
 class PagesController < ApplicationController
     before_action :get_time, :set_meta, :get_twitter
 
-    ENV['GITHUB_CLIENT_ID'] = "4a58aeefe3e9a11848b3"
-    ENV['GITHUB_CLIENT_SECRET'] = "af1e45e9de3494eef801916244b6681cbc421e6b"
-    ENV['TWITTER_CONSUMER_KEY'] = "yrYnUlmsruuSXo7g0DdM2eU46"
-    ENV['TWITTER_CONSUMER_SECRET'] = "plFacj5QBkT4LG1wdJp41nNvLdMpSyCDOoQBBpF15oUDH7HfDt"
-    ENV['TWITTER_ACCESS_TOKEN'] = "1061592747302416385-iOzzMm6vcHQQUqUtdN6DaDeCOMocAc"
-    ENV['TWITTER_ACCESS_SECRET'] = "7ee2TgaclO1T6VO9I4loz2kgCfpTdN8jqH1fGqhcSKJSO"
-
     # GET /
     def home
         @route_path = "posts"
