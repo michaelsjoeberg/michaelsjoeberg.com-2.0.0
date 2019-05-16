@@ -1,0 +1,62 @@
+{
+    "EQZEN": {
+        "description": [
+            "EQZEN is a platform to help investors track multiple stock portfolios, cash savings, and other investments in a single view. Getting started does not require registration, it is not linked with your trading account, and all data is instead saved (or downloaded) to your device.", 
+            "EQZEN makes it easier to experiment with stock portfolios without buying anything, created portfolio-files can be uploaded and tracked by multiple parties, and finally: a stunning interface!"
+        ],
+        "date": "2018-",
+        "url": "https://eqzen.com",
+        "tags": ["productivity", "financial services"],
+        "roles": ["founder", "developer"]
+    },
+    "LearnHub.io": {
+        "description": [
+            "LearnHub.io is a platform to track skills and create your own self-learning pathways; basically a sequential list with learning resources for a subject. The main idea is to show what skills you have learned and how you learned them."
+        ],
+        "date": "2018-",
+        "url": "https://learnhub.io",
+        "tags": ["education", "community"],
+        "roles": ["founder", "developer"]
+    },
+    "Holans": {
+        "description": [
+            "Holans (DBA Holans Sweden Trading Partnership) is a nutrition supplement brand in Sweden."
+        ],
+        "date": "2014-",
+        "url": "http://holans.com",
+        "tags": ["health", "retail"],
+        "roles": ["co-founder"]
+    },
+    "Give Trees": {
+        "description": [
+            "Give Trees (DBA Plant for Earth) was a mobile application initiative to fight deforestation."]
+        ,
+        "date": "2014-2017",
+        "url": "https://givetrees.co",
+        "tags": ["mobile"],
+        "roles": ["co-founder", "developer"]
+    },
+    "Doolio": {
+        "description": [
+            "Doolio was a skill tracker and public database with skills."
+        ],
+        "date": "",
+        "url": "https://doolio.co",
+        "tags": ["productivity", "community"],
+        "roles": []
+    },
+    "A Python Primer and Cheat Sheet": {
+        "description": [],
+        "date": "",
+        "url": "https://michaelsjoeberg.github.io/A-Python-Primer-and-Cheat-Sheet/",
+        "tags": [],
+        "roles": []
+    },
+    "A Scala Primer and Cheat Sheet": {
+        "description": [],
+        "date": "",
+        "url": "https://michaelsjoeberg.github.io/A-Scala-Primer-and-Cheat-Sheet/",
+        "tags": [],
+        "roles": []
+    }
+}

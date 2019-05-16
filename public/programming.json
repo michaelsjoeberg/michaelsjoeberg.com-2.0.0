@@ -1,0 +1,86 @@
+{
+    "python": {
+        "basics": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
+            "format": ".py",
+            "files": [
+                "intro",
+                "variables",
+                "arithmetic-operators",
+                "logical-operators",
+                "string-indexing",
+                "string-operations",
+                "lists",
+                "tuples",
+                "dictionaries",
+                "sets",
+                "if-else",
+                "for-loop",
+                "while-loop",
+                "functions",
+                "classes",
+                "files",
+                "exceptions",
+                "datetime",
+                "math"
+            ]
+        },
+        "data-science": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
+            "format": ".py",
+            "files": [
+                "pandas-series",
+                "numpy-arrays",
+                "numpy-indexing",
+                "numpy-masking",
+                "numpy-operations",
+                "binary-trees",
+                "k-dimensional-trees",
+                "regular-expression",
+                "enumerate",
+                "combinations"
+            ]
+        }
+    },
+    "scala": {
+        "basics": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/scala-playground/master/",
+            "format": ".scala",
+            "files": [
+                "intro",
+                "variables",
+                "arithmetic-operators",
+                "logical-operators",
+                "string-indexing",
+                "string-operations",
+                "lists",
+                "tuples",
+                "maps",
+                "sets",
+                "if-else",
+                "for-loop",
+                "while-loop",
+                "functions",
+                "classes",
+                "files",
+                "exceptions",
+                "calendar",
+                "math"
+            ]
+        }
+    },
+    "ruby": {
+        "basics": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/ruby-playground/master/",
+            "format": ".rb",
+            "files": [
+                "arithmetic-operators",
+                "logical-operators",
+                "string-indexing",
+                "string-operations",
+                "files",
+                "exceptions"
+            ]
+        }
+    }
+}

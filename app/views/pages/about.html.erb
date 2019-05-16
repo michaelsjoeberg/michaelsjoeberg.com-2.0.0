@@ -1,0 +1,120 @@
+<%= render 'navigation' %>
+
+<div class="container-fluid p-md-5 p-sm-3">
+    <!-- header -->
+    <div class="row justify-content-center mb-3">
+        <div class="col-12 col-md-10">
+            <h1><%= @meta_title %></h1>
+        </div>
+        <div class="col-12 col-md-10 mt-3">
+            <div class="divider"></div>
+        </div>
+    </div>
+    <!-- image -->
+    <div class="row justify-content-center mb-3">
+        <div class="col-12 col-md-10 hidden-until-lg">
+            <h3><%= image_tag "banner.jpg", :class => "m-0", :style => "max-width:100%;" %></h3>
+        </div>
+        <div class="col-12 col-md-10 mb-3 mt-lg-3">
+            <p class="m-0">I am a full-stack web developer with a decade of experience creating web applications -- currently founder and sole developer at <a href="https://eqzen.com">EQZEN</a>.</p>
+        </div>
+        <div class="col-12 col-md-10">
+            <div class="divider"></div>
+        </div>
+    </div>
+    <!-- interests -->
+    <!-- <div class="row justify-content-center mb-3">
+        <div class="col-12 col-md-10 mb-3">
+            <h2>Areas of interest</h2>
+        </div>
+        <div class="col-12 col-md-10 mb-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 border-left">
+                        <p class="text-small text-muted font-family-mono m-0">software development, web technologies, programming languages, machine learning, neural networks, knowledge reasoning, parallel programming</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- education -->
+    <div class="row justify-content-center mb-3">
+        <div class="col-12 col-md-10 mb-3">
+            <h2>Education</h2>
+        </div>
+        <div class="col-12 col-md-10 mb-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 border-left">
+                        <!-- bsc computing and it -->
+                        <span>
+                            <p class="font-weight-bold m-0">Bachelor of Science with Honours in Computing and Information Technology</p>
+                            <p class="m-0">The Open University, Milton Keynes, UK <span class="float-right">2018</span></p>
+                            <p>Main fields of study: Computer Science</p>
+                        </span>
+                        <!-- non-degree mathematics -->
+                        <span>
+                            <p class="m-0"><span class="font-weight-bold">Non-degree courses in Mathematics</span></p>
+                            <p>The Open University, Milton Keynes, UK <span class="float-right">2014-2018</span></p>
+                        </span>
+                        <!-- non-degree natural science -->
+                        <span>
+                            <p class="m-0"><span class="font-weight-bold">Non-degree courses in Natural Science</span></p>
+                            <p class="m-0">Karlstad University, Karlstad, Sweden <span class="float-right">2012-2013</span></p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- technical skills -->
+    <div class="row justify-content-center mb-3">
+        <div class="col-12 col-md-10 mb-3">
+            <h2>Technical Skills</h2>
+        </div>
+        <div class="col-12 col-md-10 mb-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 border-left">
+                        <!-- general -->
+                        <p class="mb-3">I am a generalist software developer and work comfortably with multiple programming languages, including <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=java" target="_blank">Java, <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=python" target="_blank">Python</a>, Lua, <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=scala" target="_blank">Scala</a>, and <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=ruby" target="_blank">Ruby</a>. I am also familiar with many software related tools and platforms, such as Mathematica, Photoshop, PhoneGap, Corona SDK, AWS, and Heroku, as well as various text editors (i.e. Sublime Text).</p>
+                        <ul>
+                            <!-- web development -->
+                            <li class="list-item">
+                                <p class="mb-3"><span class="font-weight-bold">Web Development</span> I have considerable experience with full-stack web development and have created web applications for 10+ years. I work comfortably with multiple web technologies, including HTML, CSS, jQuery (JavaScript), <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=php" target="_blank">PHP</a>, MySQL, Flask (Python), <a href="https://github.com/michaelsjoeberg/michaelsjoeberg.com" target="_blank">Ruby on Rails</a>, Sass, and MongoDB.</p>
+                            </li>
+                            <!-- data science -->
+                            <li class="list-item">
+                                <p class="m-0"><span class="font-weight-bold">Data Science</span> I have a strong background in mathematics, including coursework in multivariable calculus and mathematical statistics, and work comfortably with quantitative problems. I am proficient at working with real-world datasets using Python libraries, including NumPy, Pandas, and matplotlib, as well as SQL/ SPARQL, <a href="https://github.com/michaelsjoeberg/python-playground/tree/master/jupyter-notebooks" target="_blank">Jupyter Notebook</a>, and spreadsheet tools, such as Microsoft Excel.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- other -->
+    <!-- <div class="row justify-content-center mb-3">
+        <div class="col-12 col-md-10 mb-3">
+            <h2>Other</h2>
+        </div>
+        <div class="col-12 col-md-10 mb-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 border-left">
+                        <span>
+                            <p class="font-weight-bold m-0">Sole proprietorship</p>
+                            <p>Sweden <span class="float-right">2010-2014</span></p>
+                        </span>
+                        <span>
+                            <p class="font-weight-bold m-0">Swedish Armed Forces</p>
+                            <p class="m-0">1st Marine Regiment. Berga, Sweden <span class="float-right">2009-2010</span></p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>
+
+<%= render 'footer' %> 

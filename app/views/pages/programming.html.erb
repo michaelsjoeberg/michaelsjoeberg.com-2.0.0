@@ -1,0 +1,102 @@
+<%= render 'navigation' %>
+
+<div class="container-fluid p-md-5 p-sm-3">
+    
+    <!-- render file -->
+    <% if @content != nil %>
+    <div class="row justify-content-center mb-3">
+        <div class="col-12 col-md-10 mb-3">
+            <!-- title -->
+            <h3>
+                <a href="/<%= @route_path %>/<%= @category %>/<%= @group %>/<%= @file %>"><%= @file.gsub('-', ' ').titleize %></a>
+                <a href="https://twitter.com/intent/tweet" class="twitter-share-button" data-via="<%= @meta_author[1..99] %>"></a>
+            </h3>
+            <!-- navigation -->
+            <p class="m-0"><%= @category.titleize %> / <%= @group.gsub('-', ' ').titleize %></p>
+            <!-- date -->
+            <!--<% if @content.lines[-5].include? "'''" %>
+                <p class="m-0"><%= Date.parse(@content.lines[-3]).strftime("%B %d, %Y") %></p>
+            <% end %>-->
+        </div>
+        <div class="col-12 col-md-10 mb-3">
+            <pre class="prettyprint lang-<%= @category %> p-3 mb-3"><%= @content %></pre>
+        </div>
+        <% if @content.lines[-5].include? "'''" %>
+        <div class="col-12 col-md-10 text-md-center mb-3">
+            <p class="m-0">
+                <a href="<%= @content.lines[-2] %>" target="_blank"><p class="m-0">View on GitHub</a>
+            </p>
+        </div>
+        <% end %>
+    </div>
+
+    <!-- else render categories and groups -->
+    <% else %>
+        <!-- header -->
+        <div class="row justify-content-center mb-3">
+            <div class="col-12 col-md-5">
+                <h1><%= @meta_title %></h1>
+            </div>
+            <div class="col-12 col-md-5 text-md-right">
+                <input id="search" class="pl-3" name="search" placeholder="Search" type="text" data-list=".list" autocomplete="off" style="margin-top:9px;min-width:100%;">
+            </div>
+            <div class="col-12 col-md-10 mt-3">
+                <div class="divider"></div>
+            </div>
+        </div>
+        <% @programming.keys.each do |category| %>
+        <div class="row justify-content-center mb-3">
+            <!-- title -->
+            <div class="col-12 col-md-10 mb-3">
+                <h2 id="<%= category %>" class="font-weight-bold">
+                    <a href="#<%= category %>"><%= category.titleize %></a>
+                </h2>
+            </div>
+            <!-- file list -->
+            <div class="col-12 col-md-10">
+                <div class="container-fluid">
+                    <div class="row list" style="border:1px solid rgba(23, 23, 23, 0.05);">
+                    <% @programming[category].keys.each do |group| %>
+                        <!-- header -->
+                        <li class="list_header col-12 mb-3" style="background:rgba(23, 23, 23, 0.05);">
+                            <p class="mt-2 mb-2"><%= group.titleize %></p>
+                        </li>
+                        <% @programming[category][group]["files"].each do |file| %>
+                        <!-- file -->
+                        <li class="col-12 col-md-6 list-item mb-3">
+                            <a href="/<%= @route_path %>/<%= category %>/<%= group %>/<%= file %>">
+                                <span><%= file.titleize %></span>
+                            </a>
+                        </li>
+                        <% end %>
+                    <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% end %>
+    <% end %>
+</div>
+
+<!-- leave this on each page to avoid loading issue -->
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<!-- twitter share button -->
+<script>
+    window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+        return t;
+    }(document, "script", "twitter-wjs"));
+    twttr.widgets.load();
+</script>
+
+<%= render 'footer' %> 

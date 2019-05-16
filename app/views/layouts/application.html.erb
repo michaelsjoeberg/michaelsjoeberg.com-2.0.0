@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<% if Range.new(Time.local(@time.year, @time.month, @time.day, 8), Time.local(@time.year, @time.month, @time.day, 18)) === @time %>
+<html class="" data-time="<%= @time %>">
+<% else %>
+<html class="" data-time="<%= @time %>">
+<% end %>
+    <head>
+        <title><%= @meta_title %></title>
+        <%= favicon_link_tag 'fav.png' %>
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= stylesheet_link_tag 'https://use.fontawesome.com/releases/v5.4.2/css/all.css' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <!-- mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Facebook META -->
+        <meta property="og:title" content="<%= @meta_title %>">
+        <meta property="og:description" content="<%= @meta_description %>">
+        <meta property="og:image" content="<%= @meta_image %>">
+        <meta property="og:url" content="<%= @meta_url %>">
+        <meta property="og:site_name" content="<%= @meta_site_name %>">
+        <!-- Twitter META -->
+        <meta name="twitter:card" content="<%= @meta_card_type %>">
+        <meta name="twitter:image:alt" content="<%= @meta_description %>">
+        <meta name="twitter:creator" content="<%= @meta_author %>">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container-fluid p-0"><%= yield %></div>
+        </div>
+    </body>
+</html>
