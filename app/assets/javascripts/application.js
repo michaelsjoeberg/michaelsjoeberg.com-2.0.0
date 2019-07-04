@@ -27,6 +27,16 @@ $(document).on('turbolinks:load', function() {
         headers: '.list_header'
     });
 
+    $('a[data-toggle="popover"]').on('click', function(e) {
+        e.preventDefault();
+    })
+
+    // $('a[data-toggle="popover"]').popover();
+
+    $('a[data-toggle="popover"]').popover({
+        trigger: 'focus'
+    });
+
     // reload twitter button
     //twttr.widgets.load();
 
