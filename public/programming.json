@@ -82,5 +82,15 @@
                 "exceptions"
             ]
         }
+    },
+    "c": {
+        "basics": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/c-playground/master/",
+            "format": ".c",
+            "files": [
+                "intro",
+                "arithmetic-operators"
+            ]
+        }
     }
 }
