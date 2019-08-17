@@ -89,7 +89,12 @@
             "format": ".c",
             "files": [
                 "intro",
-                "arithmetic-operators"
+                "variables",
+                "constants",
+                "arithmetic-operators",
+                "logical-operators",
+                "string-indexing",
+                "string-operations"
             ]
         }
     }
