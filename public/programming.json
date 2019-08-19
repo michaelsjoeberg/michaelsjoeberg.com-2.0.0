@@ -91,10 +91,18 @@
                 "intro",
                 "variables",
                 "constants",
+                "pointers",
                 "arithmetic-operators",
                 "logical-operators",
                 "string-indexing",
-                "string-operations"
+                "string-operations",
+                "arrays",
+                "structures",
+                "if-else",
+                "switch",
+                "for-loop",
+                "while-loop",
+                "functions"
             ]
         }
     }
