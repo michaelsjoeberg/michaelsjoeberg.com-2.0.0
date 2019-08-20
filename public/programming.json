@@ -98,11 +98,14 @@
                 "string-operations",
                 "arrays",
                 "structures",
+                "unions",
                 "if-else",
                 "switch",
                 "for-loop",
                 "while-loop",
-                "functions"
+                "functions",
+                "files",
+                "macros"
             ]
         }
     }
