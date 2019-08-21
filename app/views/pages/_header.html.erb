@@ -15,7 +15,7 @@
             <% if @location.nil? %>
                 <div><i class="fas fa-map-marker-alt"></i> No location</div>
             <% else %>
-                <a href="https://www.google.com/maps?q=<%= @location %>" target="_blank"><i class="fas fa-map-marker-alt"></i> <%= @location %></a>
+                <div><a href="https://www.google.com/maps?q=<%= @location %>" target="_blank"><i class="fas fa-map-marker-alt"></i> <%= @location %></a></div>
             <% end %>
         </div>
         <div class="col-12 col-md-8 text-center mt-3 mt-md-5">
