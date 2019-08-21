@@ -6,4 +6,4 @@
 
 ### IDEAS
 
-    [ ] Add recent activity somewhere (github commits, tweets?)
+    [X] Add recent activity somewhere (github commits, tweets?) ADDED RECENT TWEETS TO HEADER
