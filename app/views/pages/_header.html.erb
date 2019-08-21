@@ -5,18 +5,21 @@
         </div>
         <div class="col-12 col-md-10 col-lg-5 mt-3 mt-lg-2">
             <a href="/" class="no-decoration">
-                <h1 class="rotate font-family-mono mt-md-1">
+                <!-- <h1 class="rotate font-family-mono mt-md-1">
                     <span class="pl-1 pr-1">michaelsjöberg</span>
+                </h1> -->
+                <h1 class="typewriter font-family-mono mt-md-1">
+                    <span class="typewriter-text">michaelsjöberg</span>
                 </h1>
             </a>
             <% if @location.nil? %>
-                <span><i class="fas fa-map-marker-alt"></i> No location</span>
+                <div><i class="fas fa-map-marker-alt"></i> No location</div>
             <% else %>
                 <a href="https://www.google.com/maps?q=<%= @location %>" target="_blank"><i class="fas fa-map-marker-alt"></i> <%= @location %></a>
             <% end %>
         </div>
-        <div class="col-12 col-md-10 mt-3 mt-md-5">
-            <p class="m-0">I am a full-stack web developer with a decade of experience creating web applications -- currently founder and sole developer at <a href="https://eqzen.com">EQZEN</a>.</p>
+        <div class="col-12 col-md-8 text-center mt-3 mt-md-5">
+            <p class="m-0">I am currently building a collaborative investment management platform to make it easier to invest better together at <a href="https://eqzen.com">EQZEN</a>.</p>
         </div>
     </div>
 </div>

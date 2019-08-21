@@ -690,3 +690,30 @@ canvas{ display: block; vertical-align: bottom; }
     background-size         : cover;
     background-position     : 50% 50%;
 }
+
+/* typewriter animation */
+.typewriter { display: inline-block; }
+
+.typewriter-text {
+    display                 : inline-block;
+    overflow                : hidden;
+    letter-spacing          : 1px;
+    animation               : typing 10s steps(14, end) infinite, blink .75s step-end infinite;
+    white-space             : nowrap;
+    border-right            : 4px solid $COLOR_CONTRAST;
+    box-sizing              : border-box;
+}
+
+@keyframes typing {
+    0% { width: 0%; }
+    20% { width: 0%; }
+    40% { width: 100%; }
+    100% { width: 100%; }
+}
+
+@keyframes blink {
+    0% { border-color: transparent; }
+    50% { border-color: $COLOR_CONTRAST; }
+    100% { border-color: transparent; }
+}
+

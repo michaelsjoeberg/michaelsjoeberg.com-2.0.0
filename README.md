@@ -2,7 +2,7 @@
 
 ### TODO
 
-    [ ] Add course list table on about page, searchable? (see other lists)
+    [X] Add course list table on about page (see other lists) HOW USEFUL IS THIS?
 
 ### IDEAS
 

@@ -21,12 +21,15 @@
                     <div class="col-12 border-left">
                         <% @posts[@post]['body'].each do |paragraph| %>
                             <% if paragraph[0..4].include? "EDIT" %>
-                                <p class="mb-3 font-weight-bold post"><%= paragraph %></p>
+                                <p class="mb-3 font-weight-bold post"><%= paragraph.html_safe %></p>
+                            <% elsif paragraph[0..4].include? "BOLD" %>
+                                <p class="mb-3 font-weight-bold post"><%= paragraph[4..99].html_safe %></p>
                             <% else %>
-                            <p class="mb-3 font-family-serif"><%= paragraph %></p>
+                            <p class="mb-3 font-family-serif"><%= paragraph.html_safe %></p>
                             <% end %>
                         <% end %>
                         <% if @posts[@post]['links'] != [] %>
+                        <p class="mb-0 font-family-serif">Links in this post:</p>
                         <ul>
                             <% @posts[@post]['links'].each do |link| %>
                             <li class="list-item">
