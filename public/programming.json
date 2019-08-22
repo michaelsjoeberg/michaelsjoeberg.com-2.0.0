@@ -117,6 +117,13 @@
                 "memory-management",
                 "recursion"
             ]
+        },
+        "applications": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/c-playground/master/",
+            "format": ".c",
+            "files": [
+                "temperature-converter"
+            ]
         }
     }
 }
