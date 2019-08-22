@@ -104,8 +104,18 @@
                 "for-loop",
                 "while-loop",
                 "functions",
+                "header",
                 "files",
-                "macros"
+                "macros",
+                "error-handling"
+            ]
+        },
+        "other": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/c-playground/master/",
+            "format": ".c",
+            "files": [
+                "memory-management",
+                "recursion"
             ]
         }
     }
