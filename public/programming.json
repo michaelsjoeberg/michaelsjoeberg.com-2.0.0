@@ -127,7 +127,7 @@
         }
     },
     "prolog": {
-        "bascis": {
+        "basics": {
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/prolog-playground/master/",
             "format": ".pl",
             "files": [
