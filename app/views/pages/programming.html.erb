@@ -19,7 +19,8 @@
             <% end %>-->
         </div>
         <div class="col-12 col-md-10 mb-3">
-            <pre class="prettyprint lang-<%= @category %> p-3 mb-3"><%= @content %></pre>
+            <pre class="prettyprint <%= @category %> p-3 mb-3"><%= @content %>
+            </pre>
         </div>
         <% if @content.lines[-2].include? "https://github.com/" %>
         <div class="col-12 col-md-10 text-md-center mb-3">
@@ -79,9 +80,19 @@
 </div>
 
 <!-- leave this on each page to avoid loading issue -->
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<!-- <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script> -->
+
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
+    });
+</script> -->
+
+
 <!-- twitter share button -->
-<script>
+<!-- <script>
     window.twttr = (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
             t = window.twttr || {};
@@ -97,6 +108,6 @@
         return t;
     }(document, "script", "twitter-wjs"));
     twttr.widgets.load();
-</script>
+</script> -->
 
 <%= render 'footer' %> 
