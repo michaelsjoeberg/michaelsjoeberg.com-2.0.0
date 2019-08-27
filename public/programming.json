@@ -125,5 +125,18 @@
                 "temperature-converter"
             ]
         }
+    },
+    "prolog": {
+        "bascis": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/prolog-playground/master/",
+            "format": ".pl",
+            "files": [
+                "intro",
+                "facts",
+                "queries",
+                "rules",
+                "directives"
+            ]
+        }
     }
 }
