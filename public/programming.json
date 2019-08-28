@@ -132,10 +132,18 @@
             "format": ".pl",
             "files": [
                 "intro",
+                "predicates",
                 "facts",
-                "queries",
                 "rules",
+                "queries",
                 "directives"
+            ]
+        },
+        "applications": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/prolog-playground/master/",
+            "format": ".pl",
+            "files": [
+                "collatz-conjecture"
             ]
         }
     }
