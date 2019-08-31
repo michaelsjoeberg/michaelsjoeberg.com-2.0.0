@@ -136,7 +136,9 @@
                 "facts",
                 "rules",
                 "queries",
-                "directives"
+                "directives",
+                "lists",
+                "integer-arithmetic"
             ]
         },
         "applications": {
