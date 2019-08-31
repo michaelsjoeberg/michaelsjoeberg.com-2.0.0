@@ -1,5 +1,19 @@
 <%= render 'navigation' %>
 
+<div class="row justify-content-center hidden-until-md">
+    <div class="col-12">
+        <nav class="navbar navbar-expand-md p-0" style="border-top:1px solid #FFF;">
+            <ul class="navbar-nav mr-auto ml-auto">
+                <% @programming.keys.each do |category| %>
+                    <li class="nav-item">
+                        <a href="/<%= @route_path %>#<%= category %>" class="nav-link" data-turbolinks="false"><%= category.titleize %></a>
+                    </li>
+                <% end %>
+            </ul>
+        </nav>
+    </div>
+</div>
+
 <div class="container-fluid p-md-5 p-sm-3">
     
     <!-- render file -->
@@ -12,7 +26,9 @@
                 <a href="https://twitter.com/intent/tweet" class="twitter-share-button" data-via="<%= @meta_author[1..99] %>"></a>
             </h3>
             <!-- navigation -->
-            <p class="m-0"><%= @category.titleize %> / <%= @group.gsub('-', ' ').titleize %></p>
+            <p class="m-0">
+                <a href="/<%= @route_path %>#<%= @category %>" data-turbolinks="false"><%= @category.titleize %></a> / <a href="/<%= @route_path %>#<%= @category %>_<%= @group.gsub('-', '_')%>" data-turbolinks="false"><%= @group.gsub('-', ' ').titleize %></a>
+            </p>
             <!-- date -->
             <!--<% if @content.lines[-5].include? "'''" %>
                 <p class="m-0"><%= Date.parse(@content.lines[-3]).strftime("%B %d, %Y") %></p>
@@ -60,7 +76,7 @@
                     <% @programming[category].keys.each do |group| %>
                         <!-- header -->
                         <li class="list_header col-12 mb-3" style="background:rgba(23, 23, 23, 0.05);">
-                            <p class="mt-2 mb-2"><%= group.titleize %></p>
+                            <p id="<%= category %>_<%= group.gsub('-', '_') %>" class="mt-2 mb-2"><%= group.titleize %></p>
                         </li>
                         <% @programming[category][group]["files"].each do |file| %>
                         <!-- file -->
