@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-    before_action :get_time, :set_meta, :get_twitter
+    before_action :get_time, :set_meta, :get_twitter, :get_github
 
     # GET /
     def home
@@ -12,7 +12,7 @@ class PagesController < ApplicationController
         @counter = 0
     end
 
-    # GET /programming
+    # GET /technical-notes
     def programming
         @route_path = "technical-notes"
         @meta_title = "Technical Notes"
@@ -37,6 +37,13 @@ class PagesController < ApplicationController
             end
         end
     end
+
+    # GET /activity
+    def activity
+        @route_path = "activity"
+        @meta_title = "Activity"
+    end
+
 
     # GET /projects
     def projects
@@ -88,7 +95,7 @@ class PagesController < ApplicationController
         end
 
         def get_github
-            url = "https://api.github.com/users/michaelsjoeberg/events?client_id=#{ENV['GITHUB_CLIENT_ID']}&client_secret=#{ENV['GITHUB_CLIENT_SECRET']}"
+            url = "https://api.github.com/users/michaelsjoeberg/events/public?client_id=#{ENV['GITHUB_CLIENT_ID']}&client_secret=#{ENV['GITHUB_CLIENT_SECRET']}"
             @commits = HTTParty.get(url).parsed_response
         end
 

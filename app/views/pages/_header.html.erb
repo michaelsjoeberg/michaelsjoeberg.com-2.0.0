@@ -3,7 +3,7 @@
         <div class="col-12 col-lg-5 text-lg-right hidden-until-lg">
             <h3><%= image_tag "profile_sm.jpg", :class => "m-0", :style => "border-radius:50%;max-height:80px;" %></h3>
         </div>
-        <div class="col-12 col-md-10 col-lg-5 text-center text-lg-left mt-3 mt-lg-2">
+        <div class="col-12 col-md-8 col-lg-5 text-center text-lg-left mt-3 mt-lg-2">
             <a href="/" class="no-decoration">
                 <!-- <h1 class="rotate font-family-mono mt-md-1">
                     <span class="pl-1 pr-1">michaelsjöberg</span>
@@ -24,6 +24,23 @@
             <p class="m-0">I am currently building a collaborative investment management platform to make it easier to invest better together at <a href="https://eqzen.com">EQZEN</a>.</p>
         </div>
 
+        <!-- most recent commit -->
+        <!-- <div class="col-12 col-md-5 mt-3 mt-md-5 hidden-until-lg">
+            <div class="row">
+                <% @commits[0..1].each do |commit| %>
+                    <div class="col-12">
+                        <div class="<% if commit.equal?(@commits[0..1].last) %>mb-0<% else %>mb-3<% end %>">
+                            <p class="m-0">
+                                <a href="https://github.com/<%= commit['repo']['name'] %>/commit/<%= commit['payload']['commits'][0]['sha'] %>" target="_blank"><%= commit['payload']['commits'][0]['message'] %></a>
+                            </p>
+
+                            <p class="small text-muted mb-0">GitHub -- <%= commit['created_at'].to_datetime.strftime("%Y-%m-%d %H:%M:%S UTC") %></p>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+        </div> -->
+
         <!-- most recent tweet -->
         <div class="col-12 col-md-10 mt-3 mt-md-5 hidden-until-lg">
             <div class="row">
@@ -31,11 +48,12 @@
                     <div class="col-12 col-md-6">
                         <div class="<% if tweet.equal?(@tweets[0..1].last) %>mb-0<% else %>mb-3<% end %>">
                             <p class="m-0"><a href="<%= tweet.url %>" target="_blank"><%= tweet.text %></a></p>
-                            <p class="small text-muted mb-0"><%= tweet.created_at %></p>
+                            <p class="small text-muted mb-0">Twitter -- <%= tweet.created_at %></p>
                         </div>
                     </div>
                 <% end %>
             </div>
         </div>
+        
     </div>
 </div>
