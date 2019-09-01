@@ -137,7 +137,16 @@
                 "rules",
                 "queries",
                 "directives",
+                "arithmetic-operators",
                 "lists",
+                "sets"
+            ]
+        },
+        "other": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/prolog-playground/master/",
+            "format": ".pl",
+            "files": [
+                "trace",
                 "integer-arithmetic"
             ]
         },
