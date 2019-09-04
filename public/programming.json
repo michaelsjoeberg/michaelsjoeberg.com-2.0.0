@@ -139,7 +139,10 @@
                 "directives",
                 "arithmetic-operators",
                 "lists",
-                "sets"
+                "sets",
+                "files",
+                "math",
+                "recursion"
             ]
         },
         "other": {
@@ -147,7 +150,9 @@
             "format": ".pl",
             "files": [
                 "trace",
-                "integer-arithmetic"
+                "integer-arithmetic",
+                "random",
+                "read-and-write"
             ]
         },
         "applications": {
