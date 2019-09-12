@@ -22,7 +22,8 @@
                 "files",
                 "exceptions",
                 "datetime",
-                "math"
+                "math",
+                "recursion"
             ]
         },
         "data-science": {
@@ -39,6 +40,13 @@
                 "regular-expression",
                 "enumerate",
                 "combinations"
+            ]
+        },
+        "applications": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
+            "format": ".py",
+            "files": [
+                "graphs"
             ]
         }
     },
@@ -161,7 +169,8 @@
             "files": [
                 "collatz-conjecture",
                 "combinatorial-optimization",
-                "expert-systems"
+                "expert-systems",
+                "graphs"
             ]
         }
     }
