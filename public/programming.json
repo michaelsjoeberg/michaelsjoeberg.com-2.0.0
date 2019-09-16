@@ -173,5 +173,14 @@
                 "graphs"
             ]
         }
+    },
+    "misc": {
+        "hardware-description-language": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/misc-playground/master/",
+            "format": ".hdl",
+            "files": [
+                "Xor"
+            ]
+        }
     }
 }
