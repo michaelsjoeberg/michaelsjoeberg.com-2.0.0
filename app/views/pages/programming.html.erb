@@ -2,7 +2,7 @@
 
 <div class="row justify-content-center hidden-until-md">
     <div class="col-12">
-        <nav class="navbar navbar-expand-md p-0" style="border-top:1px solid #FFF;">
+        <nav class="navbar navbar-expand-md p-0 background--primary">
             <ul class="navbar-nav mr-auto ml-auto">
                 <% @programming.keys.each do |category| %>
                     <li class="nav-item">
@@ -53,9 +53,9 @@
         <div class="row justify-content-center mb-3">
             <div class="col-12 col-md-5">
                 <h1><%= @meta_title %></h1>
-                <a href="/activity">
+                <!-- <a href="/activity">
                     <p class="m-0">Recent activity</p>
-                </a>
+                </a> -->
             </div>
             <div class="col-12 col-md-5 text-md-right">
                 <input id="search" class="pl-3" name="search" placeholder="Search" type="text" data-list=".list" autocomplete="off" style="margin-top:9px;min-width:100%;">

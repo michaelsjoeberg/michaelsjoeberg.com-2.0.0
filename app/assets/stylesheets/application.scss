@@ -59,13 +59,17 @@ $ANDROID_GREEN      : #99C24D;
 $EERIE_BLACK        : #171717;
 
 // dark
-$COLOR_DARK_BASE    : $EERIE_BLACK;
+//$COLOR_DARK_BASE    : $EERIE_BLACK;
+$COLOR_DARK_BASE    : #000000;
 $COLOR_DARK_MUTED   : rgba($COLOR_DARK_BASE, 0.5);
 $COLOR_DARK_LIGHT   : rgba($COLOR_DARK_BASE, 0.05);
+
 // colors
-$COLOR_PRIMARY      : $BLEU_DE_FRANCE;
+//$COLOR_PRIMARY      : $BLEU_DE_FRANCE;
+$COLOR_PRIMARY      : #0070FF;
 $COLOR_SECONDARY    : $LAPIS_LAZULI;
-$COLOR_CONTRAST     : $YELLOW_ORANGE;
+//$COLOR_CONTRAST     : $YELLOW_ORANGE;
+$COLOR_CONTRAST     : #CE2700;
 // system
 $WHITE_BASE         : #FFFFFF;
 $WHITE_SHADED       : $SNOW;
@@ -98,6 +102,16 @@ body {
 }
 
 .divider { border-top: 1px solid $COLOR_DARK_LIGHT; }
+
+.background--dark { 
+    background: $COLOR_DARK_BASE !important;
+    color: $WHITE_BASE;
+}
+
+.background--primary { 
+    background: $COLOR_PRIMARY !important;
+    color: $WHITE_BASE;
+}
 
 .text-muted { color: $COLOR_DARK_MUTED !important; }
 .text-lowercase { text-transform: lowercase !important; }
@@ -236,8 +250,10 @@ input#search:focus {
 // --------------------------------------------------------
 .navbar { 
     font-family             : $FONT_FAMILY_BASE;
-    color                   : $COLOR_DARK_BASE;
-    background-color        : $COLOR_DARK_LIGHT;
+    //color                   : $COLOR_DARK_BASE;
+    color                   : $WHITE_BASE;
+    //background-color        : $COLOR_DARK_LIGHT;
+    background-color        : $COLOR_DARK_BASE; 
 }
 
 // .navbar-expand-md .navbar-nav .nav-item { padding: 0; }
@@ -246,10 +262,13 @@ input#search:focus {
     background-color        : transparent; 
     padding-left            : 1rem;
     padding-right           : 1rem;
-    border-left             : 1px solid $WHITE_BASE;
+    //border-left             : 1px solid $WHITE_BASE;
+    //font-weight             : $FONT_WEIGHT_BOLD;
+
+    border-bottom           : 0.25rem solid transparent; 
     
     a {
-        color               : $COLOR_DARK_BASE;
+        color               : $WHITE_BASE;
         font-family         : $FONT_FAMILY_BASE;
         font-size           : $FONT_SIZE_BASE; 
         text-decoration     : none !important;
@@ -265,16 +284,17 @@ input#search:focus {
         padding-left        : 1rem;
         padding-right       : 1rem;
 
-        border-top          : 1px solid $WHITE_BASE;
+        //border-top          : 1px solid $WHITE_BASE;
     }
 }
 
-.navbar .nav-item:last-child { border-right: 1px solid $WHITE_BASE; }
+//.navbar .nav-item:last-child { border-right: 1px solid $WHITE_BASE; }
 
 .navbar .nav-item:hover,
 .navbar .nav-item:focus,
 .navbar .nav-item.show { 
-    background-color        : $COLOR_CONTRAST;
+    //background-color        : $COLOR_CONTRAST;
+    border-bottom           : 0.25rem solid $WHITE_BASE;
 
     a {
         color               : $WHITE_BASE;
@@ -282,7 +302,7 @@ input#search:focus {
     }
 
     .dropdown-menu {
-        background-color        : $COLOR_CONTRAST;
+        background-color        : $COLOR_DARK_BASE;
 
         a {
             color               : $WHITE_BASE;
@@ -292,7 +312,7 @@ input#search:focus {
 
         a:hover,
         a:focus {
-            color               : $COLOR_DARK_BASE;
+            //color               : $COLOR_DARK_BASE;
             text-decoration     : none !important;
         }
     }
@@ -411,6 +431,18 @@ button.navbar-toggler {
 a { word-break: break-word !important; }
 a.break-all { word-break: break-all !important; }
 
+// NEW
+
+p a { font-weight: $FONT_WEIGHT_BOLD; }
+
+p a:hover,
+p a:focus {
+    color                   : $WHITE_BASE;
+    background-color        : $COLOR_PRIMARY;
+}
+
+// END NEW
+
 ol, ul, dl { 
     margin                  : 0 !important;
     padding                 : 0;
@@ -499,25 +531,28 @@ pre.prettyprint span {
 @media screen {
     // plaintext
     .pln,
+    .hljs-meta,
     .hljs-params { color: $COLOR_DARK_BASE !important; }
 
     // string
     .str,
+    .hljs-regexp,
     .hljs-string { color: $COLOR_PRIMARY !important; }
 
     // keyword
     .kwd,
     .hljs-keyword,
     .hljs-built_in,
-    .hljs-meta-keyword { color: $LAPIS_LAZULI !important; }
+    .hljs-class,
+    .hljs-function { color: $COLOR_PRIMARY !important; }
 
     // comment
     .com,
-    .hljs-comment,
-    .hljs-meta-string { color: $COLOR_DARK_MUTED !important; }
+    .hljs-comment { color: $COLOR_DARK_MUTED !important; }
 
     // type
-    .typ { color: $COLOR_DARK_BASE !important; }
+    .typ,
+    .hljs-type { color: $COLOR_DARK_BASE !important; }
 
     .lit,
     .hljs-number,
@@ -544,12 +579,16 @@ pre.prettyprint span {
 
     // function
     .fun,
-    .hljs-function .hljs-title { 
+    .hljs-function .hljs-title,
+    .hljs-class .hljs-title { 
         color: $COLOR_DARK_BASE !important;
         font-weight: $FONT_WEIGHT_BOLD !important;
     }
 
-    .hljs-function .hljs-keyword { color: $COLOR_DARK_BASE !important; }
+    .hljs-function .hljs-keyword,
+    .hljs-meta .hljs-meta-keyword,
+    .hljs-meta .hljs-meta-string,
+    .hljs-class .hljs-keyword { color: $COLOR_DARK_BASE !important; }
 }
 
 // .popover {

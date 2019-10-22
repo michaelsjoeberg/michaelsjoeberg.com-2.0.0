@@ -109,6 +109,7 @@ class PagesController < ApplicationController
                 end
                 @tweets = twitter_client.user_timeline("sjoebergco")
                 @location = @tweets[0].user.location
+                @description = (@tweets[0].user.description).split('--')[0]
             rescue
                 @tweets = nil
                 @location = nil

@@ -12,7 +12,8 @@
                 <div class="col-12 col-md-10">
                     <h1>
                         <a href="/<%= @route_path %>/<%= post %>"><%= @posts[post]['title'] %></a>
-                        <a href="https://twitter.com/intent/tweet" class="twitter-share-button" data-via="<%= @meta_author[1..99] %>" data-text='<%= @posts[post]["title"] %>' data-url='https://www.michaelsjoeberg.com/posts/<%= post %>'></a>
+                        
+                        <!-- <a href="https://twitter.com/intent/tweet" class="twitter-share-button" data-via="<%= @meta_author[1..99] %>" data-text='<%= @posts[post]["title"] %>' data-url='https://www.michaelsjoeberg.com/posts/<%= post %>'></a> -->
                     </h1>
                     <!-- date -->
                     <p class=""><%= Date.parse(post).strftime("%B %d, %Y") %></p>
@@ -28,10 +29,16 @@
                                     <% elsif paragraph[0..4].include? "BOLD" %>
                                         <p class="mb-3 font-weight-bold post"><%= paragraph[4..99].html_safe %></p>
                                     <% else %>
-                                    <p class="mb-3 font-family-serif"><%= paragraph.html_safe %></p>
+
+                                        <% if @posts[post]['body'].last == paragraph %>
+                                            <p class="mb-0 font-family-serif"><%= paragraph.html_safe %></p>
+                                        <% else %>
+                                            <p class="mb-3 font-family-serif"><%= paragraph.html_safe %></p>
+                                        <% end %>
                                     <% end %>
                                 <% end %>
-                                <% if @posts[post]['links'] != [] %>
+
+                                <!--<% if @posts[post]['links'] != [] %>
                                 <p class="mb-0 font-family-serif">Links in this post:</p>
                                 <ul>
                                     <% @posts[post]['links'].each do |link| %>
@@ -40,7 +47,17 @@
                                     </li>
                                     <% end %>
                                 </ul>
-                                <% end %>
+                                <% end %>-->
+
+                                <!--<% if @posts[post]['tags'] != [] %>
+                                    <p class="mb-0 font-family-serif">Keywords:
+                                    
+                                        <% @posts[post]['tags'].each do |tag| %>
+                                            <a href="https://michaelsjoeberg.com/posts/<%= tag %>" target="_blank" class="font-family-serif" style="display: inline;"><%= tag %></a>
+                                        <% end %>
+                                    </p>
+                                <% end %>-->
+
                             </div>
                         </div>
                     </div>

@@ -24,7 +24,9 @@
                     <div class="col-12">
                         <div class="<% if commit.equal?(@commits[0..20].last) %>mb-0<% else %>mb-3<% end %>">
                             <p class="m-0">
+
                                 <a href="https://github.com/<%= commit['repo']['name'] %>/commit/<%= commit['payload']['commits'][0]['sha'] %>" target="_blank"><%= commit['payload']['commits'][0]['message'] %></a>
+                                
                             </p>
                             <p class="small text-muted mb-0">GitHub -- <%= commit['created_at'].to_datetime.strftime("%Y-%m-%d %H:%M:%S UTC") %></p>
                         </div>
