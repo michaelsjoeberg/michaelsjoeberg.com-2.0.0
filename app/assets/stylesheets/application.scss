@@ -67,7 +67,8 @@ $COLOR_DARK_LIGHT   : rgba($COLOR_DARK_BASE, 0.05);
 // colors
 //$COLOR_PRIMARY      : $BLEU_DE_FRANCE;
 $COLOR_PRIMARY      : #0070FF;
-$COLOR_SECONDARY    : $LAPIS_LAZULI;
+//$COLOR_SECONDARY    : $LAPIS_LAZULI;
+$COLOR_SECONDARY    : #00d608;
 //$COLOR_CONTRAST     : $YELLOW_ORANGE;
 $COLOR_CONTRAST     : #CE2700;
 // system
@@ -265,6 +266,7 @@ input#search:focus {
     //border-left             : 1px solid $WHITE_BASE;
     //font-weight             : $FONT_WEIGHT_BOLD;
 
+    border-top              : 0.25rem solid transparent; 
     border-bottom           : 0.25rem solid transparent; 
     
     a {
@@ -294,7 +296,7 @@ input#search:focus {
 .navbar .nav-item:focus,
 .navbar .nav-item.show { 
     //background-color        : $COLOR_CONTRAST;
-    border-bottom           : 0.25rem solid $WHITE_BASE;
+    border-bottom           : 0.25rem solid $COLOR_PRIMARY;
 
     a {
         color               : $WHITE_BASE;
@@ -317,6 +319,10 @@ input#search:focus {
         }
     }
 }
+
+.navbar.background--primary .nav-item:hover,
+.navbar.background--primary .nav-item:focus,
+.navbar.background--primary .nav-item.show { border-bottom: 0.25rem solid $WHITE_BASE; }
 
 /* modal */
 .modal .modal-dialog {
@@ -441,6 +447,8 @@ p a:focus {
     background-color        : $COLOR_PRIMARY;
 }
 
+.font-size-medium { font-size: $FONT_SIZE_MEDIUM; }
+
 // END NEW
 
 ol, ul, dl { 
@@ -493,7 +501,7 @@ a:focus {
 
 a:hover { 
     color                   : $COLOR_SECONDARY;
-    text-decoration         : underline !important;
+    text-decoration         : none !important;
 }
 
 a.underline,
@@ -775,9 +783,9 @@ canvas{ display: block; vertical-align: bottom; }
     display                 : inline-block;
     overflow                : hidden;
     letter-spacing          : 1px;
-    animation               : typing 10s steps(14, end) infinite, blink .75s step-end infinite;
+    animation               : typing 10s steps(15, end) infinite, blink .75s step-end infinite;
     white-space             : nowrap;
-    border-right            : 4px solid $COLOR_CONTRAST;
+    border-right            : 0.25rem solid $WHITE_BASE;
     box-sizing              : border-box;
 }
 
@@ -790,7 +798,7 @@ canvas{ display: block; vertical-align: bottom; }
 
 @keyframes blink {
     0% { border-color: transparent; }
-    50% { border-color: $COLOR_CONTRAST; }
+    50% { border-color: $WHITE_BASE; }
     100% { border-color: transparent; }
 }
 

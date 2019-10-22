@@ -24,9 +24,9 @@
             <!-- <p class="m-0">I am currently building a collaborative investment management platform to make it easier to invest better together at <a href="https://eqzen.com">EQZEN</a>.</p> -->
 
             <% if @description.nil? %>
-                <p class="mb-0">No description (is Twitter down?)</p>
+                <p class="font-size-medium mb-0">No description (is Twitter down?)</p>
             <% else %>
-                <p class="mb-0">
+                <p class="font-size-medium mb-0">
                     <% @description.split().each do |word| %>
                         <% if word[0] == '@' %>
                             <a href="https://twitter.com/<%= word[1..999] %>" target="_blank"><%= word %></a>

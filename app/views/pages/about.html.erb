@@ -19,11 +19,24 @@
             <div class="divider"></div>
         </div>
         <div class="col-12 col-md-10 mt-lg-3" style="column-count: 2;">
-            <p class="mb-3">I enjoy building things -- idea to product -- and have worked on multiple projects over the years, often to solve a problem, but also exploratory; to develop new interests and technical skills.</p>
+            <p class="font-family-serif mb-3">I enjoy building things -- idea to product -- and have founded several businesses over the years, often to solve a problem, but also exploratory (and for fun!); to develop new interests and technical skills.</p>
 
-            <p class="mb-3">I take a generalist approach to learning and personal development, awake hours are typically split between: working on projects, including learning new technologies and solving domain-specific problems; studying (mostly) technical subjects, such as computing, mathematics, finance, economics, and biology; and exercise, in particular mountain biking, road cycling, weight-lifting, and swimming.</p>
+            <p class="font-family-serif mb-3">I take a generalist approach to learning and personal development, productive hours are typically split between: working on projects, typically solving problems or learning new technologies; reading, mostly computer science, but also mathematics, finance, economics, and biology; and workout, in particular biking, weights, and swimming.</p>
 
             <!-- <p class="mb-0">I am currently building a collaborative investment management platform to make it easier to invest better together at <a href="https://eqzen.com">EQZEN</a>.</p> -->
+
+            <p class="font-family-serif mb-0">
+                <span class="font-weight-bold">Now: </span>
+                <% @description.split().each do |word| %>
+                    <% if word[0] == '@' %>
+                        <a href="https://twitter.com/<%= word[1..999] %>" target="_blank"><%= word %></a>
+                    <% elsif word[0] == '#' %>
+                        <a href="https://twitter.com/hashtag/<%= word[1..999] %>" target="_blank"><%= word %></a>
+                    <% else %>
+                        <%= word %>
+                    <% end %>
+                <% end %>
+            </p>
         </div>
         <div class="col-12 col-md-10 mt-3">
             <div class="divider"></div>
@@ -44,6 +57,7 @@
             </div>
         </div>
     </div> -->
+
     <!-- education -->
     <div class="row justify-content-center mb-3">
         <div class="col-12 col-md-10 mb-3">
@@ -94,7 +108,7 @@
                 <div class="row">
                     <div class="col-12 border-left">
                         <!-- general -->
-                        <p class="mb-3">I am a generalist software developer and work comfortably with multiple programming languages, including <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=java" target="_blank">Java, <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=python" target="_blank">Python</a>, Lua, <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=scala" target="_blank">Scala</a>, and <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=ruby" target="_blank">Ruby</a>. I am familiar with many software related tools, such as Mathematica, Photoshop, PhoneGap, and Corona SDK, and a few cloud platforms, such as AWS and Heroku, as well as various IDEs (but prefer Sublime Text).</p>
+                        <p class="mb-3">I am a generalist software developer and work comfortably with multiple programming languages, including <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=java" target="_blank">Java</a>, <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=python" target="_blank">Python</a>, Lua, <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=scala" target="_blank">Scala</a>, and <a href="https://github.com/michaelsjoeberg?tab=repositories&q=&type=&language=ruby" target="_blank">Ruby</a>. I am familiar with many software related tools and frameworks, such as MATLAB, Mathematica, PhoneGap, and Corona SDK, and cloud platforms, such as AWS and Heroku, as well as various IDEs (but prefer Sublime Text).</p>
                         <ul>
                             <!-- web development -->
                             <li class="list-item">
