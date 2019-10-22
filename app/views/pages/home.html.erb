@@ -5,9 +5,9 @@
 
     <!-- render posts -->
     <% @posts.keys.each do |post| %>
-        <% unless @counter == 4 %>
+        <% unless @counter == 1 %>
 
-            <div class="row justify-content-center mb-3">
+            <div class="row justify-content-center">
                 <!-- title -->
                 <div class="col-12 col-md-10">
                     <h1 class="font-family-serif font-weight-bold">
@@ -16,13 +16,16 @@
                         <!-- <a href="https://twitter.com/intent/tweet" class="twitter-share-button" data-via="<%= @meta_author[1..99] %>" data-text='<%= @posts[post]["title"] %>' data-url='https://www.michaelsjoeberg.com/posts/<%= post %>'></a> -->
                     </h1>
                     <!-- date -->
-                    <p class=""><%= Date.parse(post).strftime("%B %d, %Y") %></p>
+                    <p class="text-muted mb-0"><%= Date.parse(post).strftime("%B %d, %Y") %></p>
+                </div>
+                <div class="col-12 col-md-10 my-3">
+                    <div class="divider--bold"></div>
                 </div>
                 <!-- body -->
-                <div class="col-12 col-md-10 mb-3">
+                <div class="col-12 col-md-10">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-12 border-left">
+                            <div class="col-12 p-0">
                                 <% @posts[post]['body'].each do |paragraph| %>
                                     <% if paragraph[0..4].include? "EDIT" %>
                                         <p class="mb-3 font-weight-bold post"><%= paragraph.html_safe %></p>
@@ -62,13 +65,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-10 my-3">
+                    <div class="divider"></div>
+                </div>
             </div>
 
         <% @counter = @counter + 1 %>
         <% end %>
     <% end %>
     <div class="row justify-content-center">
-        <div class="col-12 col-md-10 text-md-center mb-3">
+        <div class="col-12 col-md-10 text-md-center">
             <p class="m-0"><a href="/posts">Browse all posts</a></p>
         </div>
     </div>

@@ -104,6 +104,8 @@ body {
 
 .divider { border-top: 1px solid $COLOR_DARK_LIGHT; }
 
+.divider--bold { border-top: 1rem solid $COLOR_DARK_LIGHT; }
+
 .background--dark { 
     background: $COLOR_DARK_BASE !important;
     color: $WHITE_BASE;
@@ -235,17 +237,20 @@ input#search:focus {
 // .border-solid:hover p.text-muted { color: $COLOR_DARK_BASE !important; }
 
 .border-left { 
-    //border                  : 0 !important;
-    //border                  : 1px solid $COLOR_DARK_BASE;
     border-left             : 1rem solid $COLOR_DARK_LIGHT !important;
     background-color        : transparent;
     -webkit-transition      : all .15s;
     -moz-transition         : all .15s; 
     transition              : all .15s;
+
+    &.primary { border-left: 1rem solid $COLOR_PRIMARY !important; }
 }
 
 // .border-left.hover:hover,
-// .border-left.hover:focus { border-left: 1rem solid $COLOR_CONTRAST !important; }
+// .border-left.hover:focus { 
+//     //border-left             : 1rem solid $COLOR_PRIMARY !important;
+//     animation               : breathe 10s infinite;
+// }
 
 // NAVBAR 
 // --------------------------------------------------------
@@ -799,5 +804,11 @@ canvas{ display: block; vertical-align: bottom; }
     0% { border-color: transparent; }
     50% { border-color: $WHITE_BASE; }
     100% { border-color: transparent; }
+}
+
+@keyframes breathe {
+    0% { border-color: $COLOR_DARK_LIGHT; }
+    50% { border-color: $COLOR_PRIMARY; }
+    100% { border-color: $COLOR_DARK_LIGHT; }
 }
 

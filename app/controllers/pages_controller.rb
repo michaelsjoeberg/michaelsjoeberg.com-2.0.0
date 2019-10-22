@@ -44,16 +44,6 @@ class PagesController < ApplicationController
         @meta_title = "Activity"
     end
 
-
-    # GET /projects
-    def projects
-        @route_path = "projects"
-        @meta_title = "Projects"
-
-        json_file = File.read(Rails.public_path + 'projects.json')
-        @projects = JSON.parse(json_file)
-    end
-
     # GET /posts
     def posts
         @route_path = "posts"
@@ -77,9 +67,24 @@ class PagesController < ApplicationController
     def about
         @route_path = "about"
         @meta_title = "About"
+    end
+
+    # GET /about/courses
+    def courses
+        @route_path = "courses"
+        @meta_title = "Course List"
 
         json_file = File.read(Rails.public_path + 'courses.json')
         @courses = JSON.parse(json_file)
+    end
+
+    # GET about/projects
+    def projects
+        @route_path = "projects"
+        @meta_title = "Projects"
+
+        json_file = File.read(Rails.public_path + 'projects.json')
+        @projects = JSON.parse(json_file)
     end
 
     private

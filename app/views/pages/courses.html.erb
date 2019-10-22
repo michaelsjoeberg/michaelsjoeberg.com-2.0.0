@@ -1,0 +1,74 @@
+<%= render 'navigation' %> 
+<%= render 'navigation_about' %>
+
+<div class="container-fluid p-md-5 p-sm-3">
+
+    <!-- header -->
+    <div class="row justify-content-center mb-3">
+        <div class="col-12 col-md-5">
+            <h1><%= @meta_title %></h1>
+        </div>
+        <div class="col-12 col-md-5 text-md-right">
+            <input id="search" class="pl-3" name="search" placeholder="Search" type="text" data-list=".list" autocomplete="off" style="margin-top:9px;min-width:100%;">
+        </div>
+        <div class="col-12 col-md-10 mt-3">
+            <div class="divider"></div>
+        </div>
+    </div>
+
+    <!-- render course -->
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+            <div class="container-fluid">
+                <div class="row list" style="border:1px solid rgba(23, 23, 23, 0.05);">
+                    <% @courses.keys.each do |course| %>
+
+                    <!-- header -->
+                    <% if @courses[course]['date'].equal?(@courses.keys.first['date']) %>
+                    <% @header = @courses[course]['date'] %>
+                    <li class="list_header col-12 mb-3" style="background:rgba(23, 23, 23, 0.05);">
+                        <p class="mt-2 mb-2"><%= @header %></p>
+                    </li>
+                    <% end %>
+
+                    <!-- update header -->
+                    <% if @courses[course]['date'] != @header %>
+                    <% @header = @courses[course]['date'] %>
+                    <li class="list_header col-12 mb-3" style="background:rgba(23, 23, 23, 0.05);">
+                        <p class="mt-2 mb-2"><%= @header %></p>
+                    </li>
+                    <% end %>
+
+                    <li class="col-12 mb-3">
+                        <div class="container-fluid p-0">
+                            <div class="row">
+                                <div class="col-12 col-md-8">
+                                    <% unless @courses[course]['url'] == "" %>
+                                        <a href="<%= @courses[course]['url'] %>" target="_blank"><%= course %></a>
+                                    <% else %>
+                                        <p class="text-muted m-0"><%= course %></p>
+                                    <% end %>
+                                    <p class="m-0"><%= @courses[course]['description'] %></p>
+                                </div>
+                                <div class="col-12 col-md-4 text-md-right mt-3 mt-md-0">
+                                    <p class="text-muted m-0"><%= @courses[course]['school'] %></p>
+                                    <!--
+                                    <% unless @courses[course]['ects'].nil? %>
+                                        <p class="text-muted m-0"><%= @courses[course]['ects'] %> ECTS</p>
+                                    <% end %>
+                                    <% unless @courses[course]['grade'].nil? %>
+                                        <p class="text-muted m-0"><%= @courses[course]['grade'] %></p>
+                                    <% end %>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= render 'footer' %> 
