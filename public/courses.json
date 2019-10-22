@@ -1,4 +1,36 @@
-{
+{   
+    "Security engineering": {
+        "description": "Software security, implementation errors and exploits, static and dynamic analysis, privilege management, access control.",
+        "school": "King's College London",
+        "url": "",
+        "ects": "15",
+        "date": "2019",
+        "grade": ""
+    },
+    "Computer vision": {
+        "description": "Image formation foundations (physics, geometry, human visual system), filtering and convolution, feature detection, grouping and segmentation, object categorization and recognition.",
+        "school": "King's College London",
+        "url": "",
+        "ects": "15",
+        "date": "2019",
+        "grade": ""
+    },
+    "Agents and multi-agent systems": {
+        "description": "Intelligent and autonomous agents, BDI, reactive and hybrid agent architectures, auctions and negotiations.",
+        "school": "King's College London",
+        "url": "https://www.kcl.ac.uk/study/courses-data/modules/7/agents-and-multi-agent-systems-7ccsmams",
+        "ects": "15",
+        "date": "2019",
+        "grade": ""
+    },
+    "Artificial Intelligence: reasoning and decision making": {
+        "description": "Knowledge representation, probabilistic reasoning, temporal probabilistic reasoning, sequential decision making, game theory, argumentation, machine learning.",
+        "school": "King's College London",
+        "url": "https://www.kcl.ac.uk/study/courses-data/modules/6/Artificial-Intelligence-6ccs3ain1",
+        "ects": "15",
+        "date": "2019",
+        "grade": ""
+    },
     "Introducing statistics": {
         "description": "Descriptive statistics, regression and surveys, hypothesis testing, association and estimation, experiments and clinical trials.",
         "school": "The Open University",
