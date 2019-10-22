@@ -787,7 +787,8 @@ canvas{ display: block; vertical-align: bottom; }
     display                 : inline-block;
     overflow                : hidden;
     letter-spacing          : 1px;
-    animation               : typing 10s steps(15, end) infinite, blink .75s step-end infinite;
+    //animation               : typing 10s steps(15, end) infinite, blink .75s step-end infinite;
+    //animation               : blink .75s step-end infinite;
     white-space             : nowrap;
     border-right            : 0.25rem solid $WHITE_BASE;
     box-sizing              : border-box;

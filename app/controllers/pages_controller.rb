@@ -9,6 +9,10 @@ class PagesController < ApplicationController
         json_file = File.read(Rails.public_path + 'posts.json')
         @posts = JSON.parse(json_file)
 
+        @intro = JSON.parse(File.read(Rails.public_path + 'intro.json'))
+        @typewriter = @intro['intro'].sample
+        @steps = @typewriter.length
+
         @counter = 0
     end
 
