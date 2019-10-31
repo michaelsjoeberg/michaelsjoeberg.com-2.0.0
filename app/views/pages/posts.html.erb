@@ -56,23 +56,19 @@
                 <div class="container-fluid">
                     <div class="row list" style="border:1px solid rgba(23, 23, 23, 0.05);">
                         
-                        <% @posts.each do |post| %>
-                        <% @lines = File.readlines(@public_path + 'posts/' + post) %>
-                        <% @title = @lines[0] %>
-                        <% @author = @lines[1] %>
-                        <% @date = post[0..-4] %>
+                        <% @posts_array.keys.each do |post| %>
 
                         <!-- header -->
-                        <% if post.equal?(@posts.first) %>
-                        <% @header = Date.parse(@date).strftime("%Y") %>
+                        <% if post.equal?(@posts_array.first) %>
+                        <% @header = Date.parse(post).strftime("%Y") %>
                         <li class="list_header col-12 mb-3" style="background:rgba(23, 23, 23, 0.05);">
                             <p class="mt-2 mb-2"><%= @header %></p>
                         </li>
                         <% end %>
 
                         <!-- update header -->
-                        <% if Date.parse(@date).strftime("%Y") != @header %>
-                        <% @header = @date[0..3] %>
+                        <% if Date.parse(post).strftime("%Y") != @header %>
+                        <% @header = post[0..3] %>
                         <li class="list_header col-12 mb-3" style="background:rgba(23, 23, 23, 0.05);">
                             <p class="mt-2 mb-2"><%= @header %></p>
                         </li>
@@ -82,10 +78,10 @@
                             <div class="container-fluid p-0">
                                 <div class="row">
                                     <div class="col-12 col-md-8">
-                                        <a href="/<%= @route_path %>/<%= @date %>"><%= @title %></a>
+                                        <a href="/<%= @route_path %>/<%= post %>"><%= @posts_array[post][:title] %></a>
                                     </div>
                                     <div class="col-12 col-md-4 text-md-right">
-                                        <span class="text-muted m-0"><%= Date.parse(@date).strftime("%B %d, %Y") %></span>
+                                        <span class="text-muted m-0"><%= Date.parse(post).strftime("%B %d, %Y") %></span>
                                     </div>
                                 </div>
                             </div>
