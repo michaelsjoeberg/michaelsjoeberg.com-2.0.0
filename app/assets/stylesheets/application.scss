@@ -25,17 +25,18 @@
 // $FONT_FAMILY_BASE   : "Source Sans Pro", sans-serif;
 // $FONT_FAMILY_MONO   : "Source Code Pro", monospace;
 // $FONT_FAMILY_SERIF  : "Source Serif Pro", serif;
-$FONT_FAMILY_BASE   : "Muli", sans-serif;
-$FONT_FAMILY_MONO   : "Source Code Pro", monospace;
-$FONT_FAMILY_SERIF  : "Merriweather", serif;
-$FONT_SIZE_LARGE    : 2.125rem;     // +1.000
-$FONT_SIZE_MEDIUM   : 1.625rem;     // +0.500
-$FONT_SIZE_BASE     : 1.125rem; 
-$FONT_SIZE_SMALL    : 0.875rem;     // -0.250
-$FONT_WEIGHT_THIN   : 300;
-$FONT_WEIGHT_BASE   : 400;
+$FONT_FAMILY_BASE       : "Muli", sans-serif;
+$FONT_FAMILY_MONO       : "Source Code Pro", monospace;
+$FONT_FAMILY_SERIF      : "Merriweather", serif;
+$FONT_SIZE_LARGE        : 2.125rem;     // +1.000
+$FONT_SIZE_MEDIUM       : 1.625rem;     // +0.500
+$FONT_SIZE_BASE_PLUS    : 1.250rem;     // +0.125
+$FONT_SIZE_BASE         : 1.125rem; 
+$FONT_SIZE_SMALL        : 0.875rem;     // -0.250
+$FONT_WEIGHT_THIN       : 300;
+$FONT_WEIGHT_BASE       : 400;
 // $FONT_WEIGHT_BOLD   : 600;
-$FONT_WEIGHT_BOLD   : 700;
+$FONT_WEIGHT_BOLD       : 700;
 
 // $COLOR_WHITE        : #FFFFFF;
 // $COLOR_LIGHT        : #F4F4F4;
@@ -118,6 +119,9 @@ body {
 
 .text-muted { color: $COLOR_DARK_MUTED !important; }
 .text-lowercase { text-transform: lowercase !important; }
+
+strong,
+.strong { font-weight: $FONT_WEIGHT_BOLD !important; }
 
 a.color-primary span,
 a.color-primary:focus span { 
@@ -390,11 +394,12 @@ input#search:focus {
 // }
 
 h1 { font-size: $FONT_SIZE_LARGE; }
+h2 { font-size: $FONT_SIZE_MEDIUM; }
 
-h2,
 h3,
 h4,
-h5 { font-size: $FONT_SIZE_MEDIUM; }
+h5 { font-size: $FONT_SIZE_BASE_PLUS; }
+
 
 h1,
 h2,
@@ -474,7 +479,17 @@ li.list-item {
 .font-family-serif { 
     font-family             : $FONT_FAMILY_SERIF !important;
     font-weight             : $FONT_WEIGHT_THIN;
-    line-height             : 2; 
+    line-height             : 2;
+}
+
+.font-family-serif h1,
+.font-family-serif h2,
+.font-family-serif h3,
+.font-family-serif h4,
+.font-family-serif h5 {
+    font-family             : $FONT_FAMILY_SERIF !important;
+    font-weight             : $FONT_WEIGHT_BOLD;
+    line-height             : 2;
 }
 
 p.text-small,
