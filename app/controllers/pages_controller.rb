@@ -67,7 +67,9 @@ class PagesController < ApplicationController
         #json_file = File.read(Rails.public_path + 'posts.json')
         #@posts = JSON.parse(json_file)
 
-        @posts = Dir.entries(Rails.public_path + 'posts/').drop(2).sort_by { | number | -number[0..-4].to_i }
+        @public_path = Rails.public_path
+
+        @posts = Dir.entries(@public_path + 'posts/').drop(2).sort_by { | number | -number[0..-4].to_i }
 
         unless (@post.nil?)
             #@post = File.readlines(Rails.public_path + "posts/#{@post}.md")
@@ -84,7 +86,7 @@ class PagesController < ApplicationController
             @date = @post
             @file = @post + '.md'
 
-            @lines = File.readlines(Rails.public_path + 'posts/' + @file)
+            @lines = File.readlines(@public_path + 'posts/' + @file)
             @title = @lines[0]
             @author = @lines[1]
 

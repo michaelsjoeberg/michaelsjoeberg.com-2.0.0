@@ -57,7 +57,7 @@
                     <div class="row list" style="border:1px solid rgba(23, 23, 23, 0.05);">
                         
                         <% @posts.each do |post| %>
-                        <% @lines = File.readlines(Rails.public_path + 'posts/' + post) %>
+                        <% @lines = File.readlines(@public_path + 'posts/' + post) %>
                         <% @title = @lines[0] %>
                         <% @author = @lines[1] %>
                         <% @date = post[0..-4] %>
