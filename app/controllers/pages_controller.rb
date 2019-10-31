@@ -97,12 +97,12 @@ class PagesController < ApplicationController
             @posts = Dir.entries(Rails.public_path + 'posts/').drop(2).sort_by { | number | -number[0..-4].to_i }
 
             @posts.each do |post|
-                date = post[0..-4]
-                lines = File.readlines(Rails.public_path + 'posts/' + post)
-                title = lines[0]
-                author = lines[1]
+                @date = post[0..-4]
+                @lines = File.readlines(Rails.public_path + 'posts/' + post)
+                @title = @lines[0]
+                @author = @lines[1]
 
-                @posts_array[date] = { title: title, author: author, lines: lines }
+                @posts_array[@date] = { title: @title, author: @author, lines: @lines }
             end
         end
     end
