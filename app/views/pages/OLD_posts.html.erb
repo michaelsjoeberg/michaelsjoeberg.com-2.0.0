@@ -1,0 +1,148 @@
+<%= render 'navigation' %>
+
+<div class="container-fluid p-md-5 p-sm-3">
+    <!-- render post -->
+    <% if @post != nil %>
+    <div class="row justify-content-center">
+        <!-- title -->
+        <div class="col-12 col-md-10">
+            <h1 class="font-family-serif font-weight-bold">
+                <a href="/<%= @route_path %>/<%= @post %>"><%= @posts[@post]['title'] %></a>
+                
+                <!-- <a href="https://twitter.com/intent/tweet" class="twitter-share-button" data-via="<%= @meta_author[1..99] %>" data-text='<%= @posts[@post]["title"] %>' data-url='https://www.michaelsjoeberg.com/posts/<%= @posts[@post] %>'></a> -->
+            </h1>
+            <!-- date -->
+            <p class="text-muted mb-0"><%= Date.parse(@post).strftime("%B %d, %Y") %></p>
+        </div>
+        <div class="col-12 col-md-10 my-3">
+            <div class="divider"></div>
+        </div>
+        <!-- body -->
+        <div class="col-12 col-md-10">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <% @posts[@post]['body'].each do |paragraph| %>
+                            <% if paragraph[0..4].include? "EDIT" %>
+                                <p class="mb-3 font-weight-bold post"><%= paragraph.html_safe %></p>
+                            <% elsif paragraph[0..4].include? "BOLD" %>
+                                <p class="mb-3 font-weight-bold post"><%= paragraph[4..99].html_safe %></p>
+                            <% else %>
+                                <% if @posts[@post]['body'].last == paragraph %>
+                                    <p class="mb-0 font-family-serif"><%= paragraph.html_safe %></p>
+                                <% else %>
+                                    <p class="mb-3 font-family-serif"><%= paragraph.html_safe %></p>
+                                <% end %>
+                            <% end %>
+                        <% end %>
+                        
+                        <!--<% if @posts[@post]['links'] != [] %>
+                        <p class="mb-0 font-family-serif">Links in this post:</p>
+                        <ul>
+                            <% @posts[@post]['links'].each do |link| %>
+                            <li class="list-item">
+                                <a href="<%= link %>" target="_blank"><span class="m-0 font-family-serif"><%= link %></span></a>
+                            </li>
+                            <% end %>
+                        </ul>
+                        <% end %>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-10 my-3">
+            <div class="divider"></div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 text-md-center">
+            <p class="m-0"><a href="/posts">Browse all posts</a></p>
+        </div>
+    </div>
+
+    <!-- else render all posts -->
+    <% else %>
+        <!-- header -->
+        <div class="row justify-content-center mb-3">
+            <div class="col-12 col-md-5">
+                <h1><%= @meta_title %></h1>
+            </div>
+            <div class="col-12 col-md-5 text-md-right">
+                <input id="search" class="pl-3" name="search" placeholder="Search" type="text" data-list=".list" autocomplete="off" style="margin-top:9px;min-width:100%;">
+            </div>
+            <!-- <div class="col-12 col-md-10 mt-3">
+                <div class="divider"></div>
+            </div> -->
+        </div>
+        <!-- render posts -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="container-fluid">
+                    <div class="row list" style="border:1px solid rgba(23, 23, 23, 0.05);">
+                        <% @posts.keys.each do |post| %>
+
+                        <!-- header -->
+                        <% if post.equal?(@posts.keys.first) %>
+                        <% @header = Date.parse(post).strftime("%Y") %>
+                        <li class="list_header col-12 mb-3" style="background:rgba(23, 23, 23, 0.05);">
+                            <p class="mt-2 mb-2"><%= @header %></p>
+                        </li>
+                        <% end %>
+
+                        <!-- update header -->
+                        <% if Date.parse(post).strftime("%Y") != @header %>
+                        <% @header = post[0..3] %>
+                        <li class="list_header col-12 mb-3" style="background:rgba(23, 23, 23, 0.05);">
+                            <p class="mt-2 mb-2"><%= @header %></p>
+                        </li>
+                        <% end %>
+
+                        <li class="col-12 mb-3">
+                            <div class="container-fluid p-0">
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                        <a href="/<%= @route_path %>/<%= post %>"><%= @posts[post]['title'] %></a>
+                                    </div>
+                                    <div class="col-12 col-md-4 text-md-right">
+                                        <span class="text-muted m-0"><%= Date.parse(post).strftime("%Y-%m-%d") %></span>
+                                    </div>
+                                    <!-- date --> 
+                                    <!-- <div class="col-12 col-md-4">
+                                        <p class="text-muted font-family-mono m-0"><%= post %></p>
+                                    </div> -->
+                                    <!-- link -->
+                                    <!-- <div class="col-12 col-md-8 mb-3">
+                                        <a href="/<%= @route_path %>/<%= post %>"><%= @posts[post]['title'] %></a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </li>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% end %>
+</div>
+
+<!-- leave this on each page to avoid loading issue -->
+<!-- twitter share button -->
+<script>
+    window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+        return t;
+    }(document, "script", "twitter-wjs"));
+    twttr.widgets.load();
+</script>
+
+<%= render 'footer' %> 

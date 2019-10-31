@@ -6,14 +6,24 @@ class PagesController < ApplicationController
         @route_path = "posts"
         @meta_title = "Michael Sjöberg"
         
-        json_file = File.read(Rails.public_path + 'posts.json')
-        @posts = JSON.parse(json_file)
+        #json_file = File.read(Rails.public_path + 'posts.json')
+        #@posts = JSON.parse(json_file)
 
         @intro = JSON.parse(File.read(Rails.public_path + 'intro.json'))
         @typewriter = @intro['intro'].sample
         @steps = @typewriter.length
 
-        @counter = 0
+        #@counter = 0
+
+        # TEST
+        @posts = Dir.entries(Rails.public_path + 'posts/').drop(2).sort_by { | number | -number[0..-4].to_i }
+        @post = @posts[0]
+
+        @date = @post[0..-4]
+
+        @lines = File.readlines(Rails.public_path + 'posts/' + @post)
+        @title = @lines[0]
+        @author = @lines[1]
     end
 
     # GET /technical-notes
@@ -54,16 +64,33 @@ class PagesController < ApplicationController
         @meta_title = "Posts"
         @post = params[:post]
 
-        json_file = File.read(Rails.public_path + 'posts.json')
-        @posts = JSON.parse(json_file)
+        #json_file = File.read(Rails.public_path + 'posts.json')
+        #@posts = JSON.parse(json_file)
+
+        @posts = Dir.entries(Rails.public_path + 'posts/').drop(2).sort_by { | number | -number[0..-4].to_i }
 
         unless (@post.nil?)
-            @post_title = @posts[@post]["title"]
-            @first_paragraph = @posts[@post]['body'][0]
+            #@post = File.readlines(Rails.public_path + "posts/#{@post}.md")
+            #@post_title = @post[0]
+            #@first_paragraph = @posts[@post]['body'][0]
+
+            #@date = @posts[0].split('_', 2)[0]
+            #@title = @posts[0].split('_', 2)[1].gsub('_', ' ')[0..-4]
+
+            #@file = @date + '_' + @title.gsub(' ', '_')
+
+            #@post = File.readlines(Rails.public_path + "posts/#{@file}.md")
+
+            @date = @post
+            @file = @post + '.md'
+
+            @lines = File.readlines(Rails.public_path + 'posts/' + @file)
+            @title = @lines[0]
+            @author = @lines[1]
 
             # override meta
-            @meta_title = @post_title
-            @meta_description = @first_paragraph
+            @meta_title = @title
+            #@meta_description = @first_paragraph
         end
     end
 

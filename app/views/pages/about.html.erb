@@ -30,13 +30,17 @@
 
             <p class="font-family-serif mb-0">
                 <span class="font-weight-bold">Now: </span>
-                <% @description.split().each do |word| %>
-                    <% if word[0] == '@' %>
-                        <a href="https://twitter.com/<%= word[1..999] %>" target="_blank"><%= word %></a>
-                    <% elsif word[0] == '#' %>
-                        <a href="https://twitter.com/hashtag/<%= word[1..999] %>" target="_blank"><%= word %></a>
-                    <% else %>
-                        <%= word %>
+                <% if @description.nil? %>
+                    <a href="https://twitter.com/sjoebergco" target="_blank">Follow me on Twitter</a>
+                <% else %>
+                    <% @description.split().each do |word| %>
+                        <% if word[0] == '@' %>
+                            <a href="https://twitter.com/<%= word[1..999] %>" target="_blank"><%= word %></a>
+                        <% elsif word[0] == '#' %>
+                            <a href="https://twitter.com/hashtag/<%= word[1..999] %>" target="_blank"><%= word %></a>
+                        <% else %>
+                            <%= word %>
+                        <% end %>
                     <% end %>
                 <% end %>
             </p>
