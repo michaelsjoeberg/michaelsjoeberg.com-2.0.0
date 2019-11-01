@@ -5,25 +5,22 @@ class PagesController < ApplicationController
     def home
         @route_path = "posts"
         @meta_title = "Michael Sjöberg"
-        
-        #json_file = File.read(Rails.public_path + 'posts.json')
-        #@posts = JSON.parse(json_file)
 
+        # intro
         @intro = JSON.parse(File.read(Rails.public_path + 'intro.json'))
         @typewriter = @intro['intro'].sample
         @steps = @typewriter.length
 
-        #@counter = 0
-
-        # TEST
-        @posts = Dir.entries(Rails.public_path + 'posts/').drop(2).sort_by { | number | -number[0..-4].to_i }
-        @post = @posts[0]
-
-        @date = @post[0..-4]
-
-        @lines = File.readlines(Rails.public_path + 'posts/' + @post)
-        @title = @lines[0]
-        @author = @lines[1]
+        # read most recent post
+        json_file = File.read(Rails.public_path + 'posts.json')
+        @posts = JSON.parse(json_file)
+        #@posts = Dir.entries(Rails.public_path + 'posts/').drop(2).sort_by { | number | -number[0..-4].to_i }
+        
+        @post = @posts.keys.first
+        @file = @post + '.md'
+        @date = @post
+        @title = @posts[@date]['title']
+        @lines = File.readlines(Rails.public_path + 'posts/' + @file)
     end
 
     # GET /technical-notes
@@ -64,45 +61,29 @@ class PagesController < ApplicationController
         @meta_title = "Posts"
         @post = params[:post]
 
-        #json_file = File.read(Rails.public_path + 'posts.json')
-        #@posts = JSON.parse(json_file)
+        json_file = File.read(Rails.public_path + 'posts.json')
+        @posts = JSON.parse(json_file)
 
         #@public_path = Rails.public_path
 
-        @posts_array = Hash.new
-
         unless (@post.nil?)
-            #@post = File.readlines(Rails.public_path + "posts/#{@post}.md")
-            #@post_title = @post[0]
-            #@first_paragraph = @posts[@post]['body'][0]
-
-            #@date = @posts[0].split('_', 2)[0]
-            #@title = @posts[0].split('_', 2)[1].gsub('_', ' ')[0..-4]
-
-            #@file = @date + '_' + @title.gsub(' ', '_')
-
-            #@post = File.readlines(Rails.public_path + "posts/#{@file}.md")
-
-            @date = @post
             @file = @post + '.md'
-
+            @date = @post
+            @title = @posts[@date]['title']
             @lines = File.readlines(Rails.public_path + 'posts/' + @file)
-            @title = @lines[0]
-            @author = @lines[1]
 
             # override meta
             @meta_title = @title
             #@meta_description = @first_paragraph
         else
-            @posts = Dir.entries(Rails.public_path + 'posts/').drop(2).sort_by { | number | -number[0..-4].to_i }
+            @posts_array = Hash.new
+            @posts.keys.each do |post|
+                @file = post + '.md'
+                @date = post
+                @title = @posts[@date]['title']
+                @tags = @posts[@date]['tags']
 
-            @posts.each do |post|
-                @date = post[0..-4]
-                @lines = File.readlines(Rails.public_path + 'posts/' + post)
-                @title = @lines[0]
-                @author = @lines[1]
-
-                @posts_array[@date] = { title: @title, author: @author, lines: @lines }
+                @posts_array[@date] = { title: @title, tags: @tags,  }
             end
         end
     end
