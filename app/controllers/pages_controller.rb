@@ -50,10 +50,10 @@ class PagesController < ApplicationController
     end
 
     # GET /activity
-    def activity
-        @route_path = "activity"
-        @meta_title = "Activity"
-    end
+    # def activity
+    #     @route_path = "activity"
+    #     @meta_title = "Activity"
+    # end
 
     # GET /posts
     def posts
