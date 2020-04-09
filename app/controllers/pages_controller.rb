@@ -92,6 +92,9 @@ class PagesController < ApplicationController
     def about
         @route_path = "about"
         @meta_title = "About"
+
+        json_file = File.read(Rails.public_path + 'projects.json')
+        @projects = JSON.parse(json_file)
     end
 
     # GET /about/courses
