@@ -137,7 +137,14 @@
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/c-playground/master/",
             "format": ".c",
             "files": [
-                "path-substitution"
+                "path-substitution",
+                "local-privilege",
+                "relative-path",
+                "command-injection",
+                "memory-corruption",
+                "shellcode-unsigned-short",
+                "shellcode-buffer",
+                "offset-return-address"
             ]
         }
     },
