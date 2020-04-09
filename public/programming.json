@@ -48,7 +48,12 @@
             "files": [
                 "graphs-with-python",
                 "fermats-last-theorem-checker",
-                "word-counting-with-mrjob"
+                "word-counting-with-mrjob",
+                "gradient-descent-algorithm",
+                "k-nearest-neighbors-with-sklearn",
+                "dijkstra-shortest-path-algorithm",
+                "prim-minimum-spanning-tree-algorithm",
+                "erlang-b-calculator"
             ]
         }
     },
