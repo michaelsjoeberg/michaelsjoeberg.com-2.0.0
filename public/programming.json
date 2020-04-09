@@ -46,7 +46,9 @@
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
             "format": ".py",
             "files": [
-                "graphs"
+                "graphs-with-python",
+                "fermats-last-theorem-checker",
+                "word-counting-with-mrjob"
             ]
         }
     },
