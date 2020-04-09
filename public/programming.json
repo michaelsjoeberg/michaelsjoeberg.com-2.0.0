@@ -132,6 +132,13 @@
             "files": [
                 "temperature-converter"
             ]
+        },
+        "exploitation": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/c-playground/master/",
+            "format": ".c",
+            "files": [
+                "path-substitution"
+            ]
         }
     },
     "prolog": {
