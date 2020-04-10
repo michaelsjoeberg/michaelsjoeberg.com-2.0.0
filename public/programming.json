@@ -52,6 +52,14 @@
                 "k-nearest-neighbors-classification"
             ]
         },
+        "neural-networks": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
+            "format": ".py",
+            "files": [
+                "convolutional",
+                "multilayer-perceptron"
+            ]
+        },
         "applications": {
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
             "format": ".py",
