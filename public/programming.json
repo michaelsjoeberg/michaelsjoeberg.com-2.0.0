@@ -41,6 +41,16 @@
                 "enumerate",
                 "combinations"
             ]
+        }, 
+        "machine-learning": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
+            "format": ".py",
+            "files": [
+                "delta-learning-algorithm",
+                "widrow-hoff-learning-algorithm",
+                "k-nearest-neighbors-with-sklearn",
+                "k-nearest-neighbors-classification"
+            ]
         },
         "applications": {
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
@@ -50,7 +60,6 @@
                 "fermats-last-theorem-checker",
                 "word-counting-with-mrjob",
                 "gradient-descent-algorithm",
-                "k-nearest-neighbors-with-sklearn",
                 "dijkstra-shortest-path-algorithm",
                 "prim-minimum-spanning-tree-algorithm",
                 "erlang-b-calculator"
