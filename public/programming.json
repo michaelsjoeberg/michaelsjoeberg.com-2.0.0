@@ -199,6 +199,21 @@
             ]
         }
     },
+    "pascal": {
+        "basics": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/pascal-playground/master/",
+            "format": ".pas",
+            "files": [
+                "intro",
+                "constants",
+                "variables",
+                "types",
+                "arithmetic-operators",
+                "if-then-else",
+                "case-else"
+            ]
+        }
+    },
     "misc": {
         "hardware-description-language": {
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/misc-playground/master/",
