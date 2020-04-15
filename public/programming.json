@@ -56,8 +56,9 @@
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
             "format": ".py",
             "files": [
-                "convolutional",
-                "multilayer-perceptron"
+                "convolutional-neural-network-with-keras",
+                "multilayer-perceptron-layers-with-keras",
+                "linear-threshold-units"
             ]
         },
         "applications": {
