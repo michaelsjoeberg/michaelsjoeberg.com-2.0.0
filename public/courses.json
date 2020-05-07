@@ -2,7 +2,7 @@
     "Network Theory": {
         "description": "Graph and network properties, small world phenomenon and distributions, probabilistic models (information flow), queuing systems and networks, markov chain and decision process, network optimisation and mathematical modelling, optimisation problems (convex, lagrangian, integer programming, heuristics, greedy algorithms).",
         "school": "King's College London",
-        "url": "",
+        "url": "https://www.kcl.ac.uk/study/courses-data/modules/7/Network-Theory-7CCSMNTH",
         "ects": "15",
         "date": "2020",
         "grade": ""
@@ -10,7 +10,7 @@
     "Pattern recognition, neural networks, and deep learning": {
         "description": "Classifier design and methods, discriminant functions, learning algorithms, neural networks (artifical, multilayer, feedforward), deep discriminative and generative neural networks, feature extraction, support vector machines, clustering.",
         "school": "King's College London",
-        "url": "",
+        "url": "https://www.kcl.ac.uk/abroad/module-options/module?id=9ac7e105-daec-4860-adbb-5c4cff922255",
         "ects": "15",
         "date": "2020",
         "grade": ""
@@ -18,7 +18,7 @@
     "Nature inspired learning algorithms": {
         "description": "Analytical and numerical optimisation, random-based optimisation, binary genetic algorithms, continuous genetic algorithms, evolution strategies, ant colony optimisation, particle swarm optimisation, differential evolution.",
         "school": "King's College London",
-        "url": "",
+        "url": "https://www.kcl.ac.uk/abroad/module-options/module?id=84064412-6c13-44fd-97c2-5858e4996854",
         "ects": "15",
         "date": "2020",
         "grade": ""
@@ -34,7 +34,7 @@
     "Security engineering": {
         "description": "Software security, implementation errors and exploits, static and dynamic analysis, privilege management, access control.",
         "school": "King's College London",
-        "url": "",
+        "url": "https://www.kcl.ac.uk/abroad/module-options/module?id=f2607e0d-9506-4b90-947e-f90b569e8f05",
         "ects": "15",
         "date": "2019",
         "grade": ""
@@ -42,7 +42,7 @@
     "Computer vision": {
         "description": "Image formation foundations (physics, geometry, human visual system), filtering and convolution, feature detection, grouping and segmentation, object categorization and recognition.",
         "school": "King's College London",
-        "url": "",
+        "url": "https://www.kcl.ac.uk/study/courses-data/modules/6/Computer-Vision-6CCS3COV",
         "ects": "15",
         "date": "2019",
         "grade": ""
