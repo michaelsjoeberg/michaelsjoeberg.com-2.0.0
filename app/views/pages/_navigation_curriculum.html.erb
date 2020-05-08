@@ -1,0 +1,15 @@
+<div class="row justify-content-center hidden-until-md">
+    <div class="col-12">
+        <nav class="navbar navbar-expand-md p-0 background--primary">
+            <ul class="navbar-nav mr-auto ml-auto">
+
+                <% @curriculum.keys.each do |level| %>
+                    <li class="nav-item">
+                        <a href="/curriculum#<%= level %>" class="nav-link" data-turbolinks="false"><%= level %>: <%= @curriculum[level]['title'] %></a>
+                    </li>
+                <% end %>
+
+            </ul>
+        </nav>
+    </div>
+</div>

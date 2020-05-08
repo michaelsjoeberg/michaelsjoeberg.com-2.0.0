@@ -1,0 +1,648 @@
+{
+    "1": {
+        "title": "Get started",
+        "programming": {
+            "python": {
+                "resources": [
+                    {
+                        "title": "Think Python: How to Think Like a Computer Scientist",
+                        "ISBN": "9781491939369",
+                        "url": "https://www.amazon.com/Think-Python-Like-Computer-Scientist-ebook/dp/B018UXJ9EQ"
+                    },
+                    {
+                        "title": "Fluent Python: Clear, Concise, and Effective Programming",
+                        "ISBN": "9781491946008",
+                        "url": "https://www.amazon.com/Fluent-Python-Concise-Effective-Programming/dp/1491946008"
+                    }
+                ]
+            },
+            "java": {
+                "resources": [
+                    {
+                        "title": "Think Java: How to Think Like a Computer Scientist",
+                        "ISBN": "9781491929568",
+                        "url": "https://www.amazon.com/Think-Java-Like-Computer-Scientist/dp/1491929561"
+                    },
+                    {
+                        "title": "Effective Java",
+                        "ISBN": "9780134685991",
+                        "url": "https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997"
+                    }
+                ]
+            },
+            "c": {
+                "resources": [
+                    {
+                        "title": "C Programming Language",
+                        "ISBN": "9780131103627",
+                        "url": "https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628"
+                    }
+                ]
+            }
+        },
+        "mathematics": {
+            "linear-algebra": {
+                "resources": [
+                    {
+                        "title": "Linear Algebra (Undergraduate Texts in Mathematics)",
+                        "ISBN": "9780387964126",
+                        "url": "https://www.amazon.com/Linear-Algebra-Undergraduate-Texts-Mathematics/dp/0387964126"
+                    }
+                ]
+            },
+            "differential-equations": {
+                "resources": [
+                    {
+                        "title": "A First Course in Differential Equations",
+                        "ISBN": "9783319178516",
+                        "url": "https://www.amazon.com/Course-Differential-Equations-Undergraduate-Mathematics/dp/3319178512"
+                    }
+                ]
+            },
+            "discrete-mathematics": {
+                "resources": [
+                    {
+                        "title": "Discrete Mathematics",
+                        "ISBN": "9781577667308",
+                        "url": "https://www.amazon.com/Discrete-Mathematics-Gary-Chartrand/dp/1577667301"
+                    }
+                ]
+            },
+            "statistics-and-probability": {
+                "resources": [
+                    {
+                        "title": "All of Statistics: A Concise Course in Statistical Inference (Springer Texts in Statistics)",
+                        "ISBN": "9780387402727",
+                        "url": "https://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721"
+                    }
+                ]
+            }
+        },
+        "computer-science": {
+            "computation-and-complexity": {
+                "resources": [
+                    {
+                        "title": "Introduction to the Theory of Computation",
+                        "ISBN": "9781133187790",
+                        "url": "https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X"
+                    },
+                    {
+                        "title": "Computational Complexity: A Modern Approach",
+                        "ISBN": "9780521424264",
+                        "url": "https://www.amazon.com/Computational-Complexity-Approach-Sanjeev-Arora/dp/0521424267"
+                    }
+                ]
+            },
+            "algorithms": {
+                "resources": [
+                    {
+                        "title": "Introduction to Algorithms",
+                        "ISBN": "9780262033848",
+                        "url": "https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844"
+                    }
+                ]
+            }
+        },
+        "engineering": {
+            "classical-mechanics": {
+                "resources": [
+                    {
+                        "title": "Classical Mechanics",
+                        "ISBN": "9781891389221",
+                        "url": "https://www.amazon.com/Classical-Mechanics-John-R-Taylor/dp/B003I03F42"
+                    }
+                ]
+            },
+            "electronics-and-circuit-theory": {
+                "resources": [
+                    {
+                        "title": "Foundations of Analog and Digital Electronic Circuits",
+                        "ISBN": "9781558607354",
+                        "url": "https://www.amazon.com/Foundations-Electronic-Circuits-Kaufmann-Architecture/dp/1558607358"
+                    },
+                    {
+                        "title": "Microelectronic Circuit Design",
+                        "ISBN": "9780073529608",
+                        "url": "https://www.amazon.com/Microelectronic-Circuit-Professor-Electrical-Engineering/dp/0073529605"
+                    }
+                ]
+            }
+        },
+        "computer-systems": {
+            "computer-organisation-and-architecture": {
+                "resources": [
+                    {
+                        "title": "The Elements of Computing Systems: Building a Modern Computer from First Principles",
+                        "ISBN": "9780262640688",
+                        "url": "https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/0262640686"
+                    },
+                    {
+                        "title": "Computer Systems: A Programmer's Perspective",
+                        "ISBN": "9780134092669",
+                        "url": "https://www.amazon.com/Computer-Systems-Programmers-Perspective-3rd/dp/013409266X"
+                    }
+                ]
+            },
+            "operating-systems": {
+                "resources": [
+                    {
+                        "title": "Operating System Concepts",
+                        "ISBN": "9781118063330",
+                        "url": "https://www.amazon.com/Operating-System-Concepts-Abraham-Silberschatz/dp/1118063333"
+                    },
+                    {
+                        "title": "The Linux Programming Interface: A Linux and UNIX System Programming Handbook",
+                        "ISBN": "9781593272203",
+                        "url": "https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200"
+                    }
+                ]
+            }
+        },
+        "miscellaneous": {
+            "web-technologies": {
+                "resources": [
+                    {
+                        "title": "Flask Web Development: Developing Web Applications with Python",
+                        "ISBN": "9781491991732",
+                        "url": "https://www.amazon.com/Flask-Web-Development-Developing-Applications/dp/1491991739"
+                    },
+                    {
+                        "title": "Web Design with HTML, CSS, JavaScript and jQuery",
+                        "ISBN": "9781118907443",
+                        "url": "https://www.amazon.com/Web-Design-HTML-JavaScript-jQuery/dp/1118907442"
+                    }
+                ]
+            },
+            "database-systems": {
+                "resources": [
+                    {
+                        "title": "Database Management Systems",
+                        "ISBN": "9780072465631",
+                        "url": "https://www.amazon.com/Database-Management-Systems-Raghu-Ramakrishnan/dp/0072465638"
+                    }
+                ]
+            },
+            "data-analysis": {
+                "resources": [
+                    {
+                        "title": "Think Stats: Exploratory Data Analysis",
+                        "ISBN": "9781491907337",
+                        "url": "https://www.amazon.com/Think-Stats-Exploratory-Data-Analysis/dp/1491907339"
+                    }
+                ]
+            }
+        }
+    },
+    "2": {
+        "title": "Get good",
+        "programming": {
+            "standard-ml": {
+                "resources": [
+                    {
+                        "title": "ML for the Working Programmer",
+                        "ISBN": "9780521565431",
+                        "url": "https://www.amazon.com/ML-Working-Programmer-2nd-Paulson/dp/052156543X"
+                    }
+                ]
+            },
+            "common-lisp": {
+                "resources": [
+                    {
+                        "title": "Practical Common Lisp",
+                        "ISBN": "9781590592397",
+                        "url": "https://www.amazon.com/Practical-Common-Lisp-Peter-Seibel/dp/1590592395"
+                    }
+                ]
+            },
+            "ruby": {
+                "resources": [
+                    {
+                        "title": "The Ruby Programming Language",
+                        "ISBN": "9780596516178",
+                        "url": "https://www.amazon.com/Ruby-Programming-Language-Everything-Need/dp/0596516177"
+                    }
+                ]
+            }
+        },
+        "mathematics": {
+            "linear-algebra": {
+                "resources": [
+                    {
+                        "title": "Linear Algebra Done Right (Undergraduate Texts in Mathematics)",
+                        "ISBN": "9783319110790",
+                        "url": "https://www.amazon.com/Linear-Algebra-Right-Undergraduate-Mathematics/dp/3319110799"
+                    }
+                ]
+            },
+            "differential-equations": {
+                "resources": [
+                    {
+                        "title": "Ordinary Differential Equations (Undergraduate Texts in Mathematics)",
+                        "ISBN": "9781461436171",
+                        "url": "https://www.amazon.com/Ordinary-Differential-Equations-Undergraduate-Mathematics/dp/1461436176"
+                    },
+                    {
+                        "title": "Introduction to Partial Differential Equations (Undergraduate Texts in Mathematics)",
+                        "ISBN": "9783319020983",
+                        "url": "https://www.amazon.com/Introduction-Differential-Equations-Undergraduate-Mathematics/dp/3319020986"
+                    },
+                    {
+                        "title": "Applied Partial Differential Equations (Undergraduate Texts in Mathematics)",
+                        "ISBN": "9783319124926",
+                        "url": "https://www.amazon.com/Applied-Differential-Equations-Undergraduate-Mathematics/dp/3319124927"
+                    }
+                ]
+            },
+            "number-theory": {
+                "resources": [
+                    {
+                        "title": "Elementary Number Theory (Springer Undergraduate Mathematics Series)",
+                        "ISBN": "9783540761976",
+                        "url": "https://www.amazon.com/Elementary-Number-Springer-Undergraduate-Mathematics/dp/3540761977"
+                    }
+                ]
+            }
+        },
+        "computer-science": {
+            "computational-models": {
+                "resources": [
+                    {
+                        "title": "Models of Computation: An Introduction to Computability Theory (Undergraduate Topics in Computer Science)",
+                        "ISBN": "9781848824331",
+                        "url": "https://www.amazon.com/Models-Computation-Introduction-Computability-Undergraduate/dp/1848824335"
+                    },
+                    {
+                        "title": "Structure and Interpretation of Computer Programs",
+                        "ISBN": "9780262510875",
+                        "url": "https://www.amazon.com/Structure-Interpretation-Computer-Programs-Engineering/dp/0262510871"
+                    }
+                ]
+            },
+            "compilers-and-formal-language": {
+                "resources": [
+                    {
+                        "title": "Introduction to Compiler Design (Undergraduate Topics in Computer Science)",
+                        "ISBN": "9783319669656",
+                        "url": "https://www.amazon.com/Introduction-Compiler-Undergraduate-Computer-Science/dp/3319669656"
+                    },
+                    {
+                        "title": "The Art of Assembly Language",
+                        "ISBN": "9781593272074",
+                        "url": "https://www.amazon.com/Art-Assembly-Language-2nd-ebook/dp/B003SNK99I"
+                    },
+                    {
+                        "title": "Language Implementation Patterns: Create Your Own Domain-Specific and General Programming Languages",
+                        "ISBN": "9781934356456",
+                        "url": "https://www.amazon.com/Language-Implementation-Patterns-Domain-Specific-Programming/dp/193435645X"
+                    }
+                ]
+            }
+        },
+        "engineering": {
+            "signals-and-systems": {
+                "resources": [
+                    {
+                        "title": "Signals and Systems",
+                        "ISBN": "9780138147570",
+                        "url": "https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574"
+                    }
+                ]
+            },
+            "electromagnetism": {
+                "resources": [
+                    {
+                        "title": "Introduction to Electrodynamics",
+                        "ISBN": "9781108420419",
+                        "url": "https://www.amazon.com/Introduction-Electrodynamics-David-J-Griffiths/dp/1108420419"
+                    }
+                ]
+            }
+        },
+        "applications": {
+            "machine-learning": {
+                "resources": [
+                    {
+                        "title": "Machine Learning (McGraw-Hill International Editions Computer Science Series)",
+                        "ISBN": "9780071154673",
+                        "url": "https://www.amazon.com/Learning-McGraw-Hill-International-Editions-Computer/dp/0071154671"
+                    },
+                    {
+                        "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+                        "ISBN": "9781491962299",
+                        "url": "https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1491962291"
+                    }
+                ]
+            },
+            "robotics": {
+                "resources": [
+                    {
+                        "title": "Modern Robotics: Mechanics, Planning, and Control",
+                        "ISBN": "9781107156302",
+                        "url": "https://www.amazon.com/Modern-Robotics-Mechanics-Planning-Control/dp/1107156300"
+                    }
+                ]
+            }
+        },
+        "miscellaneous": {
+            "technical-writing": {
+                "resources": [
+                    {
+                        "title": "Writing for Computer Science",
+                        "ISBN": "9781447166382",
+                        "url": "https://www.amazon.com/Writing-Computer-Science-Justin-Zobel/dp/1447166388"
+                    }
+                ]
+            },
+            "cryptography": {
+                "resources": [
+                    {
+                        "title": "Cryptography Engineering: Design Principles and Practical Applications",
+                        "ISBN": "9780470474242",
+                        "url": "https://www.amazon.com/Cryptography-Engineering-Principles-Practical-Applications/dp/0470474246"
+                    }
+                ]
+            }
+        }
+    },
+    "3": {
+        "title": "Get great",
+        "programming": {
+            "prolog": {
+                "resources": [
+                    {
+                        "title": "Learn Prolog Now!",
+                        "ISBN": "9781904987178",
+                        "url": "https://www.amazon.com/Learn-Prolog-Texts-Computing-Vol/dp/1904987176"
+                    },
+                    {
+                        "title": "Prolog Programming for Artificial Intelligence",
+                        "ISBN": "9780321417466",
+                        "url": "https://www.amazon.com/Programming-Artificial-Intelligence-International-Computer/dp/0321417461"
+                    }
+                ]
+            },
+            "c++": {
+                "resources": [
+                    {
+                        "title": "A Tour of C++",
+                        "ISBN": "9780134997834",
+                        "url": "https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832"
+                    }
+                ]
+            },
+            "scala": {
+                "resources": [
+                    {
+                        "title": "Programming in Scala",
+                        "ISBN": "9780981531687",
+                        "url": "https://www.amazon.com/Programming-Scala-Updated-2-12/dp/0981531687"
+                    }
+                ]
+            },
+            "haskell": {
+                "resources": [
+                    {
+                        "title": "Thinking Functionally with Haskell",
+                        "ISBN": "9781107452640",
+                        "url": "https://www.amazon.com/Thinking-Functionally-Haskell-Richard-Bird/dp/1107452643"
+                    }
+                ]
+            }
+        },
+        "mathematics": {
+            "deterministic-and-stochastic-dynamics": {
+                "resources": [
+                    {
+                        "title": "Dynamic Optimization: Deterministic and Stochastic Models",
+                        "ISBN": "9783319488134",
+                        "url": "https://www.amazon.com/Dynamic-Optimization-Deterministic-Stochastic-Universitext/dp/3319488139"
+                    }
+                ]
+            },
+            "graph-theory-and-networks": {
+                "resources": [
+                    {
+                        "title": "Graph Theory and Complex Networks: An Introduction",
+                        "ISBN": "9789081540612",
+                        "url": "https://www.amazon.com/Graph-Theory-Complex-Networks-Introduction/dp/9081540610"
+                    },
+                    {
+                        "title": "Networks",
+                        "ISBN": "9780198805090",
+                        "url": "https://www.amazon.com/Networks-Mark-Newman/dp/0198805098"
+                    }
+                ]
+            },
+            "optimization": {
+                "resources": [
+                    {
+                        "title": "Convex Optimization",
+                        "ISBN": "9780521833783",
+                        "url": "https://www.amazon.com/Convex-Optimization-Corrections-2008-Stephen/dp/0521833787"
+                    },
+                    {
+                        "title": "Algorithms for Optimization",
+                        "ISBN": "9780262039420",
+                        "url": "https://www.amazon.com/Algorithms-Optimization-Press-Mykel-Kochenderfer/dp/0262039427"
+                    }
+                ]
+            }
+        },
+        "computer-science": {
+            "evolutionary-algorithms": {
+                "resources": [
+                    {
+                        "title": "Evolutionary Optimization Algorithms",
+                        "ISBN": "9780470937419",
+                        "url": "https://www.amazon.com/Evolutionary-Optimization-Algorithms-Dan-Simon/dp/0470937416"
+                    },
+                    {
+                        "title": "Genetic Algorithms and Machine Learning for Programmers",
+                        "ISBN": "9781680506204",
+                        "url": "https://www.amazon.com/Genetic-Algorithms-Machine-Learning-Programmers-ebook/dp/B07PPB8Y7L"
+                    }
+                ]
+            },
+            "computational-intelligence": {
+                "resources": [
+                    {
+                        "title": "Computational Intelligence: An Introduction",
+                        "ISBN": "9780470035610",
+                        "url": "https://www.amazon.com/Computational-Intelligence-Introduction-Andries-Engelbrecht/dp/0470035617"
+                    },
+                    {
+                        "title": "Swarm Intelligence: From Natural to Artificial Systems",
+                        "ISBN": "9780195131598",
+                        "url": "https://www.amazon.com/Swarm-Intelligence-Artificial-Institute-Complexity/dp/0195131592"
+                    }
+                ]
+            }
+        },
+        "computer-systems": {
+            "computer-security": {
+                "resources": [
+                    {
+                        "title": "Security Engineering: A Guide to Building Dependable Distributed Systems",
+                        "ISBN": "9780470068526",
+                        "url": "https://www.amazon.com/Security-Engineering-Building-Dependable-Distributed/dp/0470068523"
+                    },
+                    {
+                        "title": "Hacking: The Art of Exploitation",
+                        "ISBN": "9781593271442",
+                        "url": "https://www.amazon.com/Hacking-Art-Exploitation-Jon-Erickson/dp/1593271441"
+                    }
+                ]
+            }
+        },
+        "applications": {
+            "intelligent-agents": {
+                "resources": [
+                    {
+                        "title": "Artificial Intelligence: A Modern Approach",
+                        "ISBN": "9789332543515",
+                        "url": "https://www.amazon.com/Artificial-Intelligence-Approach-Stuart-Russell/dp/9332543518"
+                    },
+                    {
+                        "title": "Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations",
+                        "ISBN": "9780521899437",
+                        "url": "https://www.amazon.com/Multiagent-Systems-Algorithmic-Game-Theoretic-Foundations/dp/0521899435"
+                    }
+                ]
+            },
+            "neural-networks-and-deep-learning": {
+                "resources": [
+                    {
+                        "title": "Deep Learning with Python",
+                        "ISBN": "9781617294433",
+                        "url": "https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438"
+                    },
+                    {
+                        "title": "Reinforcement Learning: An Introduction (Adaptive Computation and Machine Learning series)",
+                        "ISBN": "9780262039246",
+                        "url": "https://www.amazon.com/Reinforcement-Learning-Introduction-Adaptive-Computation/dp/0262039249"
+                    }
+                ]
+            },
+            "computer-vision": {
+                "resources": [
+                    {
+                        "title": "Computer Vision: Algorithms and Applications (Texts in Computer Science)",
+                        "ISBN": "9781848829343",
+                        "url": "https://www.amazon.com/Computer-Vision-Algorithms-Applications-Science/dp/1848829345"
+                    }
+                ]
+            }
+        },
+        "miscellaneous": {
+            "space-science-and-engineering": {
+                "resources": [
+                    {
+                        "title": "Universe",
+                        "ISBN": "9781319039448",
+                        "url": "https://www.amazon.com/Universe-Robert-Geller/dp/1319039448"
+                    },
+                    {
+                        "title": "Space Physics: An Introduction",
+                        "ISBN": "9781107098824",
+                        "url": "https://www.amazon.com/Space-Physics-Introduction-C-Russell/dp/1107098823"
+                    },
+                    {
+                        "title": "Introduction to Space Systems: Design and Synthesis (Space Technology Library)",
+                        "ISBN": "9781461437574",
+                        "url": "https://www.amazon.com/Introduction-Space-Systems-Synthesis-Technology/dp/1461437571"
+                    }
+                ]
+            },
+            "quantum-computing": {
+                "resources": [
+                    {
+                        "title": "Introduction to Quantum Mechanics",
+                        "ISBN": "9781107189638",
+                        "url": "https://www.amazon.com/Introduction-Quantum-Mechanics-David-Griffiths/dp/1107189632"
+                    },
+                    {
+                        "title": "Foundations of Quantum Mechanics: An Exploration of the Physical Meaning of Quantum Theory",
+                        "ISBN": "9783319658667",
+                        "url": "https://www.amazon.com/Foundations-Quantum-Mechanics-Exploration-Undergraduate/dp/3319658662"
+                    },
+                    {
+                        "title": "Quantum Computing: An Applied Approach",
+                        "ISBN": "9783030239213",
+                        "url": "https://www.amazon.com/Quantum-Computing-Approach-Jack-Hidary/dp/3030239217"
+                    }
+                ]
+            },
+            "artifical-general-intelligence": {
+                "resources": [
+                    {
+                        "title": "Artificial General Intelligence (Cognitive Technologies)",
+                        "ISBN": "9783540237334",
+                        "url": "https://www.amazon.com/Artificial-General-Intelligence-Cognitive-Technologies/dp/354023733X"
+                    },
+                    {
+                        "title": "Theoretical Foundations of Artificial General Intelligence (Atlantis Thinking Machines)",
+                        "ISBN": "9789491216619",
+                        "url": "https://www.amazon.com/Theoretical-Foundations-Artificial-Intelligence-Atlantis/dp/9491216619"
+                    }
+                ]
+            }
+        }
+    },
+    "4": {
+        "title": "What's next?",
+        "applications": {
+            "space-science-and-engineering": {
+                "resources": [
+                    {
+                        "title": "Universe",
+                        "ISBN": "9781319039448",
+                        "url": "https://www.amazon.com/Universe-Robert-Geller/dp/1319039448"
+                    },
+                    {
+                        "title": "Space Physics: An Introduction",
+                        "ISBN": "9781107098824",
+                        "url": "https://www.amazon.com/Space-Physics-Introduction-C-Russell/dp/1107098823"
+                    },
+                    {
+                        "title": "Introduction to Space Systems: Design and Synthesis (Space Technology Library)",
+                        "ISBN": "9781461437574",
+                        "url": "https://www.amazon.com/Introduction-Space-Systems-Synthesis-Technology/dp/1461437571"
+                    }
+                ]
+            },
+            "quantum-computing": {
+                "resources": [
+                    {
+                        "title": "Introduction to Quantum Mechanics",
+                        "ISBN": "9781107189638",
+                        "url": "https://www.amazon.com/Introduction-Quantum-Mechanics-David-Griffiths/dp/1107189632"
+                    },
+                    {
+                        "title": "Foundations of Quantum Mechanics: An Exploration of the Physical Meaning of Quantum Theory",
+                        "ISBN": "9783319658667",
+                        "url": "https://www.amazon.com/Foundations-Quantum-Mechanics-Exploration-Undergraduate/dp/3319658662"
+                    },
+                    {
+                        "title": "Quantum Computing: An Applied Approach",
+                        "ISBN": "9783030239213",
+                        "url": "https://www.amazon.com/Quantum-Computing-Approach-Jack-Hidary/dp/3030239217"
+                    }
+                ]
+            },
+            "artifical-general-intelligence": {
+                "resources": [
+                    {
+                        "title": "Artificial General Intelligence (Cognitive Technologies)",
+                        "ISBN": "9783540237334",
+                        "url": "https://www.amazon.com/Artificial-General-Intelligence-Cognitive-Technologies/dp/354023733X"
+                    },
+                    {
+                        "title": "Theoretical Foundations of Artificial General Intelligence (Atlantis Thinking Machines)",
+                        "ISBN": "9789491216619",
+                        "url": "https://www.amazon.com/Theoretical-Foundations-Artificial-Intelligence-Atlantis/dp/9491216619"
+                    }
+                ]
+            }
+        }
+    }
+}

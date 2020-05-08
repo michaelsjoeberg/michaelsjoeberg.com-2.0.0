@@ -23,10 +23,10 @@ class PagesController < ApplicationController
         @lines = File.readlines(Rails.public_path + 'posts/' + @file)
     end
 
-    # GET /technical-notes
+    # GET /programming
     def programming
-        @route_path = "technical-notes"
-        @meta_title = "Technical Notes"
+        @route_path = "programming"
+        @meta_title = "Programming"
         @category = params[:category]
         @group = params[:group]
         @file = params[:file]
@@ -48,12 +48,6 @@ class PagesController < ApplicationController
             end
         end
     end
-
-    # GET /activity
-    # def activity
-    #     @route_path = "activity"
-    #     @meta_title = "Activity"
-    # end
 
     # GET /posts
     def posts
@@ -106,13 +100,17 @@ class PagesController < ApplicationController
         @courses = JSON.parse(json_file)
     end
 
-    # GET about/projects
-    def projects
-        @route_path = "projects"
-        @meta_title = "Projects"
+    # GET /curriculum
+    def curriculum
+        @route_path = "curriculum"
+        @meta_title = "The Ultimate Computer Science and Engineering Curriculum"
+        @meta_image = "https://www.michaelsjoeberg.com/assets/curriculum-d34071fe3c9d02283e6ab6435aed978ab0a2d2c74a974c11df12e242c1b04482.jpg"
+        @level = params[:level]
 
-        json_file = File.read(Rails.public_path + 'projects.json')
-        @projects = JSON.parse(json_file)
+        @EXCLUSIONS = %w(and to the in of)
+
+        json_file = File.read(Rails.public_path + 'curriculum.json')
+        @curriculum = JSON.parse(json_file)
     end
 
     private
