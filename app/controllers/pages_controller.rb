@@ -119,7 +119,8 @@ class PagesController < ApplicationController
         end
 
         def set_meta
-            @meta_image = "https://www.michaelsjoeberg.com/assets/profile_sm-35d6b3ed947ff3d2d19abfe183ac21e6bef49399fb4bad40552d3be4beff3442.jpg"
+            #@meta_image = "https://www.michaelsjoeberg.com/assets/profile_sm-35d6b3ed947ff3d2d19abfe183ac21e6bef49399fb4bad40552d3be4beff3442.jpg"
+            @meta_image = "https://www.michaelsjoeberg.com/assets/banner-8618f2bdcf140a0ea70ab3bc83ba382955820a890b81e77fe0069d80b68033ef.jpg"
             @meta_site_name = "michaelsjoeberg.com"
             @meta_card_type = "summary"
             @meta_author = "@sjoebergco"
