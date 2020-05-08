@@ -532,60 +532,6 @@
                     }
                 ]
             }
-        },
-        "miscellaneous": {
-            "space-science-and-engineering": {
-                "resources": [
-                    {
-                        "title": "Universe",
-                        "ISBN": "9781319039448",
-                        "url": "https://www.amazon.com/Universe-Robert-Geller/dp/1319039448"
-                    },
-                    {
-                        "title": "Space Physics: An Introduction",
-                        "ISBN": "9781107098824",
-                        "url": "https://www.amazon.com/Space-Physics-Introduction-C-Russell/dp/1107098823"
-                    },
-                    {
-                        "title": "Introduction to Space Systems: Design and Synthesis (Space Technology Library)",
-                        "ISBN": "9781461437574",
-                        "url": "https://www.amazon.com/Introduction-Space-Systems-Synthesis-Technology/dp/1461437571"
-                    }
-                ]
-            },
-            "quantum-computing": {
-                "resources": [
-                    {
-                        "title": "Introduction to Quantum Mechanics",
-                        "ISBN": "9781107189638",
-                        "url": "https://www.amazon.com/Introduction-Quantum-Mechanics-David-Griffiths/dp/1107189632"
-                    },
-                    {
-                        "title": "Foundations of Quantum Mechanics: An Exploration of the Physical Meaning of Quantum Theory",
-                        "ISBN": "9783319658667",
-                        "url": "https://www.amazon.com/Foundations-Quantum-Mechanics-Exploration-Undergraduate/dp/3319658662"
-                    },
-                    {
-                        "title": "Quantum Computing: An Applied Approach",
-                        "ISBN": "9783030239213",
-                        "url": "https://www.amazon.com/Quantum-Computing-Approach-Jack-Hidary/dp/3030239217"
-                    }
-                ]
-            },
-            "artifical-general-intelligence": {
-                "resources": [
-                    {
-                        "title": "Artificial General Intelligence (Cognitive Technologies)",
-                        "ISBN": "9783540237334",
-                        "url": "https://www.amazon.com/Artificial-General-Intelligence-Cognitive-Technologies/dp/354023733X"
-                    },
-                    {
-                        "title": "Theoretical Foundations of Artificial General Intelligence (Atlantis Thinking Machines)",
-                        "ISBN": "9789491216619",
-                        "url": "https://www.amazon.com/Theoretical-Foundations-Artificial-Intelligence-Atlantis/dp/9491216619"
-                    }
-                ]
-            }
         }
     },
     "4": {
