@@ -85,11 +85,6 @@
                         "title": "Introduction to the Theory of Computation",
                         "ISBN": "9781133187790",
                         "url": "https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X"
-                    },
-                    {
-                        "title": "Computational Complexity: A Modern Approach",
-                        "ISBN": "9780521424264",
-                        "url": "https://www.amazon.com/Computational-Complexity-Approach-Sanjeev-Arora/dp/0521424267"
                     }
                 ]
             },
@@ -449,6 +444,15 @@
             }
         },
         "computer-science": {
+            "complexity-theory": {
+                "resources": [
+                    {
+                        "title": "Computational Complexity: A Modern Approach",
+                        "ISBN": "9780521424264",
+                        "url": "https://www.amazon.com/Computational-Complexity-Approach-Sanjeev-Arora/dp/0521424267"
+                    }
+                ]
+            },
             "evolutionary-algorithms": {
                 "resources": [
                     {
