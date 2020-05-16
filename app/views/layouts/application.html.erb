@@ -5,6 +5,14 @@
 <html class="" data-time="<%= @time %>">
 <% end %>
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114686677-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-114686677-1');
+        </script>
         <title><%= @meta_title %></title>
         <%= favicon_link_tag 'fav.png' %>
         <%= csrf_meta_tags %>
