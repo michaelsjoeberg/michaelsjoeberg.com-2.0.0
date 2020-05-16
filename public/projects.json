@@ -1,50 +1,59 @@
-{
+{   
+    "Evert.AI": {
+        "description": [
+            "In development: deployment and hosting platform for knowledge databases (automated reasoning devices)."
+        ],
+        "date": "2020-",
+        "url": "http://evert.ai",
+        "tags": ["artificial intelligence", "internet of things"],
+        "roles": ["artificial intelligence", "internet of things"]
+    },
     "EQZEN": {
         "description": [
-            "EQZEN is a cloud-based platform to make collaborative investment management easier.", 
-            "For investors; track all your investments in one place, share with an advisor (or a friend!) to help you with your portfolio. For advisors (coming soon); sell your expert advisory services to individual investors, manage multiple client portfolios in one place."
+            "EQZEN is a simple stock portfolio tracker; collect all your investments in one place; track price and performance; manage portfolio allocation and weighting; share read-only portfolio with friend or client.",
+            "In development: command-based search for quick access to company fundamentals and price data; pivot towards market overview dashboard (with less focus on portfolio management)."
         ],
         "date": "2018-",
         "url": "https://eqzen.com",
         "tags": ["productivity", "financial services"],
-        "roles": ["founder", "developer"]
+        "roles": ["productivity", "finance"]
     },
     "LearnHub.io": {
         "description": [
-            "LearnHub.io is a platform to track skills and create your own self-learning pathways; basically a sequential list with learning resources for a subject. The main idea is to show what skills you have learned and how you learned them."
+            "LearnHub.io (previsouly Doolio) is a platform for self-learners; create pathways with learning resources for a subject; explore pathways created by others; showcase your skills and projects."
         ],
         "date": "2018-",
         "url": "https://learnhub.io",
         "tags": ["education", "community"],
-        "roles": ["founder", "developer"]
+        "roles": ["online learning", "personal development"]
     },
     "Holans": {
         "description": [
-            "Holans (DBA Holans Sweden Trading Partnership) is a nutrition supplement brand in Sweden."
+            "Holans is a nutrition supplement available in Sweden."
         ],
         "date": "2014-",
         "url": "http://holans.com",
         "tags": ["health", "retail"],
-        "roles": ["co-founder"]
+        "roles": ["nutrition supplement", "fitness"]
     },
-    "Give Trees": {
+    "Give Trees (closed)": {
         "description": [
-            "Give Trees (DBA Plant for Earth) was a mobile application initiative to fight deforestation."]
+            "Give Trees (previously Plant for Earth) is an initiative to fight deforestation; plant trees using mobile application; earnings donated to various tree-planting non-profit organisations."]
         ,
         "date": "2014-2017",
         "url": "https://givetrees.co",
         "tags": ["mobile"],
-        "roles": ["co-founder", "developer"]
+        "roles": ["mobile application", "environment"]
     },
-    "Doolio": {
-        "description": [
-            "Doolio was a skill tracker and public database with skills."
-        ],
-        "date": "",
-        "url": "https://doolio.co",
-        "tags": ["productivity", "community"],
-        "roles": []
-    },
+    // "Doolio": {
+    //     "description": [
+    //         "Doolio was a skill tracker and public database with skills."
+    //     ],
+    //     "date": "",
+    //     "url": "https://doolio.co",
+    //     "tags": ["productivity", "community"],
+    //     "roles": []
+    // },
     "A Python Primer and Cheat Sheet": {
         "description": [],
         "date": "",
