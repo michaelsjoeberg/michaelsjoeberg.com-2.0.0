@@ -467,12 +467,15 @@ ol, ul, dl {
     padding-left            : 2rem; 
 }
 
+.font-family-serif ul li,
 li.list-item {
     display                 : list-item;
     list-style-type         : square;
     list-style-position     : inherit;
     //margin-left             : 1.125rem;
 }
+
+.font-family-serif ul li { margin-bottom: 1rem !important; }
 
 .font-family-mono { font-family: $FONT_FAMILY_MONO !important; }
 .font-family-base { font-family: $FONT_FAMILY_BASE !important; }
