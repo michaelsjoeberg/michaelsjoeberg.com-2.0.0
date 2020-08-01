@@ -13,7 +13,7 @@
         "url": "https://www.kcl.ac.uk/abroad/module-options/module?id=9ac7e105-daec-4860-adbb-5c4cff922255",
         "ects": "15",
         "date": "2020",
-        "grade": ""
+        "grade": "Merit"
     },
     "Nature inspired learning algorithms": {
         "description": "Analytical and numerical optimisation, random-based optimisation, binary genetic algorithms, continuous genetic algorithms, evolution strategies, ant colony optimisation, particle swarm optimisation, differential evolution.",
@@ -21,7 +21,7 @@
         "url": "https://www.kcl.ac.uk/abroad/module-options/module?id=84064412-6c13-44fd-97c2-5858e4996854",
         "ects": "15",
         "date": "2020",
-        "grade": ""
+        "grade": "Distinction"
     },
     "Big Data technologies": {
         "description": "Distributed software and database systems, MapReduce, OLTP/OLAP, Apache Spark, data streaming.",
@@ -29,7 +29,7 @@
         "url": "",
         "ects": "15",
         "date": "2020",
-        "grade": ""
+        "grade": "Distinction"
     },
     "Security engineering": {
         "description": "Software security, implementation errors and exploits, static and dynamic analysis, privilege management, access control.",
