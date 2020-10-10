@@ -50,14 +50,7 @@
             "files": [
                 "delta-learning-algorithm",
                 "widrow-hoff-learning-algorithm",
-                "k-nearest-neighbors-classification"
-            ]
-        },
-        "neural-networks": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
-            "url": "https://github.com/michaelsjoeberg/programming/blob/master/python/",
-            "format": ".py",
-            "files": [
+                "k-nearest-neighbors-classification",
                 "convolutional-neural-network-with-keras",
                 "multilayer-perceptron-layers-with-keras",
                 "linear-threshold-units"
