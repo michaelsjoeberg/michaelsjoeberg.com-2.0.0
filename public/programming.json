@@ -70,5 +70,44 @@
                 "erlang-b-calculator"
             ]
         }
+    },
+    "c": {
+        "basics": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/c/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/c/",
+            "format": ".c",
+            "files": [
+                "intro",
+                "variables",
+                "constants",
+                "pointers",
+                "arithmetics",
+                "logical-operators",
+                "strings",
+                "arrays",
+                "structures",
+                "unions",
+                "if-else",
+                "switch",
+                "for-loop",
+                "while-loop",
+                "functions",
+                "header",
+                "files",
+                "macros",
+                "error-handling",
+                "memory-management",
+                "recursion"
+            ]
+        },
+        "other": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/c/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/c/",
+            "format": ".c",
+            "files": [
+                "temperature-converter",
+                "square-root-calculator"
+            ]
+        }
     }
 }
