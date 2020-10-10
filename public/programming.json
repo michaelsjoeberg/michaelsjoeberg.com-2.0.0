@@ -1,7 +1,7 @@
 {
     "python": {
         "basics": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
             "format": ".py",
             "files": [
                 "intro",
@@ -27,7 +27,7 @@
             ]
         },
         "data-science": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
             "format": ".py",
             "files": [
                 "pandas-series",
@@ -43,7 +43,7 @@
             ]
         }, 
         "machine-learning": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
             "format": ".py",
             "files": [
                 "delta-learning-algorithm",
@@ -53,7 +53,7 @@
             ]
         },
         "neural-networks": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
             "format": ".py",
             "files": [
                 "convolutional-neural-network-with-keras",
@@ -62,7 +62,7 @@
             ]
         },
         "applications": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/python-playground/master/",
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
             "format": ".py",
             "files": [
                 "graphs-with-python",
@@ -72,158 +72,6 @@
                 "dijkstra-shortest-path-algorithm",
                 "prim-minimum-spanning-tree-algorithm",
                 "erlang-b-calculator"
-            ]
-        }
-    },
-    "scala": {
-        "basics": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/scala-playground/master/",
-            "format": ".scala",
-            "files": [
-                "intro",
-                "variables",
-                "arithmetic-operators",
-                "logical-operators",
-                "string-indexing",
-                "string-operations",
-                "lists",
-                "tuples",
-                "maps",
-                "sets",
-                "if-else",
-                "for-loop",
-                "while-loop",
-                "functions",
-                "classes",
-                "files",
-                "exceptions",
-                "calendar",
-                "math"
-            ]
-        }
-    },
-    "ruby": {
-        "basics": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/ruby-playground/master/",
-            "format": ".rb",
-            "files": [
-                "arithmetic-operators",
-                "logical-operators",
-                "string-indexing",
-                "string-operations",
-                "files",
-                "exceptions"
-            ]
-        }
-    },
-    "c": {
-        "basics": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/c-playground/master/",
-            "format": ".c",
-            "files": [
-                "intro",
-                "variables",
-                "constants",
-                "pointers",
-                "arithmetic-operators",
-                "logical-operators",
-                "string-indexing",
-                "string-operations",
-                "arrays",
-                "structures",
-                "unions",
-                "if-else",
-                "switch",
-                "for-loop",
-                "while-loop",
-                "functions",
-                "header",
-                "files",
-                "macros",
-                "error-handling"
-            ]
-        },
-        "other": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/c-playground/master/",
-            "format": ".c",
-            "files": [
-                "memory-management",
-                "recursion"
-            ]
-        },
-        "applications": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/c-playground/master/",
-            "format": ".c",
-            "files": [
-                "temperature-converter",
-                "square-root-calculator"
-            ]
-        }
-    },
-    "prolog": {
-        "basics": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/prolog-playground/master/",
-            "format": ".pl",
-            "files": [
-                "intro",
-                "predicates",
-                "facts",
-                "rules",
-                "queries",
-                "directives",
-                "arithmetic-operators",
-                "lists",
-                "sets",
-                "files",
-                "math",
-                "recursion"
-            ]
-        },
-        "other": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/prolog-playground/master/",
-            "format": ".pl",
-            "files": [
-                "trace",
-                "integer-arithmetic",
-                "random",
-                "read-and-write"
-            ]
-        },
-        "applications": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/prolog-playground/master/",
-            "format": ".pl",
-            "files": [
-                "collatz-conjecture",
-                "combinatorial-optimization",
-                "expert-systems",
-                "graphs"
-            ]
-        }
-    },
-    "pascal": {
-        "basics": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/pascal-playground/master/",
-            "format": ".pas",
-            "files": [
-                "intro",
-                "constants",
-                "variables",
-                "types",
-                "arithmetic-operators",
-                "if-then-else",
-                "case-else"
-            ]
-        }
-    },
-    "misc": {
-        "hardware-description-language": {
-            "path": "https://raw.githubusercontent.com/michaelsjoeberg/misc-playground/master/",
-            "format": ".hdl",
-            "files": [
-                "Not",
-                "And",
-                "Or",
-                "Xor"
             ]
         }
     }
