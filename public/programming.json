@@ -2,14 +2,14 @@
     "python": {
         "basics": {
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/python/",
             "format": ".py",
             "files": [
                 "intro",
                 "variables",
-                "arithmetic-operators",
+                "arithmetics",
                 "logical-operators",
-                "string-indexing",
-                "string-operations",
+                "strings",
                 "lists",
                 "tuples",
                 "dictionaries",
@@ -21,13 +21,15 @@
                 "classes",
                 "files",
                 "exceptions",
-                "datetime",
+                "date-and-time",
                 "math",
-                "recursion"
+                "recursion",
+                "regular-expression"
             ]
         },
         "data-science": {
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/python/",
             "format": ".py",
             "files": [
                 "pandas-series",
@@ -37,23 +39,23 @@
                 "numpy-operations",
                 "binary-trees",
                 "k-dimensional-trees",
-                "regular-expression",
                 "enumerate",
                 "combinations"
             ]
         }, 
         "machine-learning": {
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/python/",
             "format": ".py",
             "files": [
                 "delta-learning-algorithm",
                 "widrow-hoff-learning-algorithm",
-                "k-nearest-neighbors-with-sklearn",
                 "k-nearest-neighbors-classification"
             ]
         },
         "neural-networks": {
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/python/",
             "format": ".py",
             "files": [
                 "convolutional-neural-network-with-keras",
@@ -63,9 +65,10 @@
         },
         "applications": {
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/python/",
             "format": ".py",
             "files": [
-                "graphs-with-python",
+                "graphs",
                 "fermats-last-theorem-checker",
                 "word-counting-with-mrjob",
                 "gradient-descent-algorithm",
