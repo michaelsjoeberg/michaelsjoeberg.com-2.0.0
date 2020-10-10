@@ -29,22 +29,23 @@
             <p class="m-0">
                 <a href="/<%= @route_path %>#<%= @category %>" data-turbolinks="false"><%= @category.titleize %></a> / <a href="/<%= @route_path %>#<%= @category %>_<%= @group.gsub('-', '_')%>" data-turbolinks="false"><%= @group.gsub('-', ' ').titleize %></a>
             </p>
-            <!-- date -->
-            <!--<% if @content.lines[-5].include? "'''" %>
-                <p class="m-0"><%= Date.parse(@content.lines[-3]).strftime("%B %d, %Y") %></p>
-            <% end %>-->
         </div>
         <div class="col-12 col-md-10 mb-3">
             <pre class="prettyprint <%= @category %> p-3 mb-3"><%= @content %>
             </pre>
         </div>
-        <% if @content.lines[-2].include? "https://github.com/" %>
+        <!--<% if @content.lines[-2].include? "https://github.com/" %>
         <div class="col-12 col-md-10 text-md-center mb-3">
             <p class="m-0">
-                <a href="<%= @content.lines[-2] %>" target="_blank"><p class="m-0">View on GitHub</a>
+                <a href="<%= @path %><%= @group %>/<%= @file %><%= @format %>" target="_blank"><p class="m-0">View on GitHub</a>
             </p>
         </div>
-        <% end %>
+        <% end %>-->
+        <div class="col-12 col-md-10 text-md-center mb-3">
+            <p class="m-0">
+                <a href="<%= @url %><%= @group %>/<%= @file %><%= @format %>" target="_blank"><p class="m-0">View on GitHub</a>
+            </p>
+        </div>
     </div>
 
     <!-- else render categories and groups -->
