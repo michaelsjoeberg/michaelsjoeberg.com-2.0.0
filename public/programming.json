@@ -56,7 +56,7 @@
                 "linear-threshold-units"
             ]
         },
-        "applications": {
+        "other": {
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
             "url": "https://github.com/michaelsjoeberg/programming/blob/master/python/",
             "format": ".py",
