@@ -38,6 +38,7 @@ class PagesController < ApplicationController
             @meta_title = @file.titleize + " -- " + @category.titleize
             # define file properties
             @path = @programming[@category][@group]["path"]
+            @url = @programming[@category][@group]["url"]
             @format = @programming[@category][@group]["format"]
 
             # get raw file content from github
