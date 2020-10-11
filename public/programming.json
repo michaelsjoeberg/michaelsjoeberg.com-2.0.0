@@ -56,6 +56,19 @@
                 "linear-threshold-units"
             ]
         },
+        "project-euler-problems": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/python/",
+            "format": ".py",
+            "files": [
+                "multiples-of-3-and-5",
+                "even-fibonacci-numbers",
+                "largest-prime-factor",
+                "largest-palindrome-product",
+                "smallest-multiple",
+                "sum-square-difference"
+            ]
+        },
         "other": {
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/python/",
             "url": "https://github.com/michaelsjoeberg/programming/blob/master/python/",
