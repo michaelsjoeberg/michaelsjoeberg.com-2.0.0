@@ -109,5 +109,32 @@
                 "square-root-calculator"
             ]
         }
+    },
+    "scala": {
+        "basics": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/scala/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/scala/",
+            "format": ".scala",
+            "files": [
+                "intro",
+                "variables",
+                "arithmetics",
+                "logical-operators",
+                "strings",
+                "lists",
+                "tuples",
+                "maps",
+                "sets",
+                "if-else",
+                "for-loop",
+                "while-loop",
+                "functions",
+                "classes",
+                "files",
+                "exceptions",
+                "date-and-time",
+                "math"
+            ]
+        }
     }
 }
