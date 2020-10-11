@@ -67,7 +67,8 @@
                 "gradient-descent-algorithm",
                 "dijkstra-shortest-path-algorithm",
                 "prim-minimum-spanning-tree-algorithm",
-                "erlang-b-calculator"
+                "erlang-b-calculator",
+                "bubble-sort-algorithm"
             ]
         }
     },
