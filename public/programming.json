@@ -150,5 +150,41 @@
                 "math"
             ]
         }
+    },
+    "prolog": {
+        "basics": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/prolog/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/prolog/",
+            "format": ".pl",
+            "files": [
+                "intro",
+                "predicates",
+                "facts",
+                "rules",
+                "queries",
+                "directives",
+                "arithmetics",
+                "lists",
+                "sets",
+                "files",
+                "math",
+                "recursion",
+                "random",
+                "read-and-write"
+            ]
+        },
+        "other": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/prolog/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/prolog/",
+            "format": ".pl",
+            "files": [
+                "trace",
+                "integer-arithmetic",
+                "collatz-conjecture",
+                "combinatorial-optimization",
+                "expert-systems",
+                "graphs"
+            ]
+        }
     }
 }
