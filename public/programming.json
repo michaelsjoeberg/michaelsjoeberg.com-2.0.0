@@ -124,6 +124,16 @@
             ]
         }
     },
+    "c++": {
+        "basics": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/cpp/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/cpp/",
+            "format": ".cpp",
+            "files": [
+                "intro"
+            ]
+        }
+    },
     "scala": {
         "basics": {
             "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/scala/",
