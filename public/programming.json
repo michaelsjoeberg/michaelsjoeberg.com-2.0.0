@@ -130,7 +130,13 @@
             "url": "https://github.com/michaelsjoeberg/programming/blob/master/cpp/",
             "format": ".cpp",
             "files": [
-                "intro"
+                "intro",
+                "variables",
+                "constants",
+                "pointers",
+                "arithmetics",
+                "logical-operators",
+                "math"
             ]
         }
     },
