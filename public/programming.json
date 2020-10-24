@@ -67,7 +67,8 @@
                 "largest-palindrome-product",
                 "smallest-multiple",
                 "sum-square-difference",
-                "10001st-prime"
+                "10001st-prime",
+                "largest-product-in-a-series"
             ]
         },
         "other": {
