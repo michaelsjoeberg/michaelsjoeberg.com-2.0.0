@@ -69,8 +69,8 @@
                 "sum-square-difference",
                 "10001st-prime",
                 "largest-product-in-a-series",
-                "summation-of-primes",
-                "special-pythagorean-triplet"
+                "special-pythagorean-triplet",
+                "summation-of-primes"
             ]
         },
         "other": {
