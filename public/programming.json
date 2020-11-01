@@ -139,6 +139,7 @@
                 "arrays",
                 "constants",
                 "for-loop",
+                "functions",
                 "if-else",
                 "logical-operators",
                 "math",
