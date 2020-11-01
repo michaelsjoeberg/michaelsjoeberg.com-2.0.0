@@ -75,6 +75,11 @@
                         <li class="list_header col-12 mb-3" style="background:rgba(23, 23, 23, 0.05);">
                             <p id="<%= category %>_<%= group.gsub('-', '_') %>" class="mt-2 mb-2"><%= group.titleize %></p>
                         </li>
+                        <% if @programming[category][group]["files"].include? "intro" %>
+                            <% @programming[category][group]["files"][1..@programming[category][group]["files"].length()] = @programming[category][group]["files"][1..@programming[category][group]["files"].length()].sort! %>
+                        <% else %>
+                            <% @programming[category][group]["files"] = @programming[category][group]["files"].sort! %>
+                        <% end %>
                         <% @programming[category][group]["files"].each do |file| %>
                         <!-- file -->
                         <li class="col-12 col-md-6 list-item mb-3">
