@@ -82,7 +82,7 @@
                         <% end %>
                         <% @programming[category][group]["files"].each do |file| %>
                         <!-- file -->
-                        <li class="col-12 col-md-6 list-item mb-3">
+                        <li class="col-6 col-md-4 list-item mb-3">
                             <a href="/<%= @route_path %>/<%= category %>/<%= group %>/<%= file %>">
                                 <span><%= file.titleize %></span>
                             </a>
