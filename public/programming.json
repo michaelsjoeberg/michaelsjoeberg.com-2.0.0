@@ -96,10 +96,13 @@
             "format": ".c",
             "files": [
                 "intro",
-                "variables",
-                "constants",
-                "pointers",
                 "arithmetics",
+                "constants",
+                "error-handling",
+                "files",
+                "for-loop",
+                "variables",
+                "pointers",
                 "logical-operators",
                 "strings",
                 "arrays",
@@ -107,13 +110,10 @@
                 "unions",
                 "if-else",
                 "switch",
-                "for-loop",
                 "while-loop",
                 "functions",
                 "header",
-                "files",
                 "macros",
-                "error-handling",
                 "memory-management",
                 "recursion"
             ]
@@ -135,14 +135,14 @@
             "format": ".cpp",
             "files": [
                 "intro",
-                "variables",
-                "constants",
-                "pointers",
                 "arithmetics",
+                "constants",
+                "for-loop",
                 "logical-operators",
                 "math",
-                "for-loop",
+                "pointers",
                 "strings",
+                "variables",
                 "while-loop"
             ]
         }
@@ -154,23 +154,23 @@
             "format": ".scala",
             "files": [
                 "intro",
-                "variables",
                 "arithmetics",
-                "logical-operators",
-                "strings",
-                "lists",
-                "tuples",
-                "maps",
-                "sets",
-                "if-else",
-                "for-loop",
-                "while-loop",
-                "functions",
                 "classes",
-                "files",
-                "exceptions",
                 "date-and-time",
-                "math"
+                "exceptions",
+                "files",
+                "for-loop",
+                "functions",
+                "if-else",
+                "lists",
+                "logical-operators",
+                "maps",
+                "math",
+                "sets",
+                "strings",
+                "tuples",
+                "variables",
+                "while-loop"
             ]
         }
     },
@@ -181,19 +181,19 @@
             "format": ".pl",
             "files": [
                 "intro",
-                "predicates",
-                "facts",
-                "rules",
-                "queries",
-                "directives",
                 "arithmetics",
-                "lists",
-                "sets",
+                "directives",
+                "facts",
                 "files",
+                "lists",
                 "math",
-                "recursion",
+                "predicates",
+                "queries",
                 "random",
-                "read-and-write"
+                "read-and-write",
+                "recursion",
+                "rules",
+                "sets"
             ]
         },
         "other": {
@@ -201,12 +201,12 @@
             "url": "https://github.com/michaelsjoeberg/programming/blob/master/prolog/",
             "format": ".pl",
             "files": [
-                "trace",
-                "integer-arithmetic",
                 "collatz-conjecture",
                 "combinatorial-optimization",
                 "expert-systems",
-                "graphs"
+                "graphs",
+                "integer-arithmetic",
+                "trace"
             ]
         }
     }
