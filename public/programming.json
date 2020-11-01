@@ -136,12 +136,16 @@
             "files": [
                 "intro",
                 "arithmetics",
+                "arrays",
                 "constants",
                 "for-loop",
+                "if-else",
                 "logical-operators",
                 "math",
                 "pointers",
+                "read-and-write",
                 "strings",
+                "switch",
                 "variables",
                 "while-loop"
             ]
