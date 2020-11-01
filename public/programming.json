@@ -140,7 +140,10 @@
                 "pointers",
                 "arithmetics",
                 "logical-operators",
-                "math"
+                "math",
+                "for-loop",
+                "strings",
+                "while-loop"
             ]
         }
     },
