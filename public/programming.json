@@ -85,7 +85,8 @@
                 "dijkstra-shortest-path-algorithm",
                 "prim-minimum-spanning-tree-algorithm",
                 "erlang-b-calculator",
-                "bubble-sort-algorithm"
+                "bubble-sort-algorithm",
+                "genetic-algorithm-optimization"
             ]
         }
     },
