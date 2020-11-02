@@ -149,7 +149,8 @@
                 "strings",
                 "switch",
                 "variables",
-                "while-loop"
+                "while-loop",
+                "classes"
             ]
         }
     },
