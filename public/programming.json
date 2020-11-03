@@ -138,7 +138,11 @@
                 "intro",
                 "arithmetics",
                 "arrays",
+                "classes",
                 "constants",
+                "date-and-time,"
+                "exceptions",
+                "files",
                 "for-loop",
                 "functions",
                 "if-else",
@@ -149,8 +153,7 @@
                 "strings",
                 "switch",
                 "variables",
-                "while-loop",
-                "classes"
+                "while-loop"
             ]
         }
     },
