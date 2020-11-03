@@ -164,8 +164,10 @@
             "url": "https://github.com/michaelsjoeberg/programming/blob/master/cpp/",
             "format": ".cpp",
             "files": [
+                "bubble-sort-algorithm",
+                "multithreading",
                 "signals",
-                "multithreading"
+                "vectors"
             ]
         }
     },
