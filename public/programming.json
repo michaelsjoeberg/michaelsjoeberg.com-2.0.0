@@ -152,7 +152,6 @@
                 "namespaces",
                 "pointers",
                 "read-and-write",
-                "signals",
                 "strings",
                 "structures",
                 "switch",
@@ -165,6 +164,7 @@
             "url": "https://github.com/michaelsjoeberg/programming/blob/master/cpp/",
             "format": ".cpp",
             "files": [
+                "signals",
                 "multithreading"
             ]
         }
