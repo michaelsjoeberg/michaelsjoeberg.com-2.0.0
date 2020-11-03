@@ -159,6 +159,14 @@
                 "variables",
                 "while-loop"
             ]
+        },
+        "other": {
+            "path": "https://raw.githubusercontent.com/michaelsjoeberg/programming/master/cpp/",
+            "url": "https://github.com/michaelsjoeberg/programming/blob/master/cpp/",
+            "format": ".cpp",
+            "files": [
+                "multithreading"
+            ]
         }
     },
     "scala": {
