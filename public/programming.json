@@ -151,6 +151,7 @@
                 "pointers",
                 "read-and-write",
                 "strings",
+                "structures",
                 "switch",
                 "variables",
                 "while-loop"
