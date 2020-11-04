@@ -1,50 +1,58 @@
 {   
-    "Evert.AI": {
+    "Evert.AI (in development)": {
         "description": [
-            "In development: deployment and hosting platform for knowledge databases (automated reasoning devices)."
+            "Deployment and hosting platform for knowledge databases (automated reasoning applications)."
         ],
         "date": "2020-",
         "url": "http://evert.ai",
-        "tags": ["artificial intelligence", "internet of things"],
-        "roles": ["artificial intelligence", "internet of things"]
+        "tags": ["automated reasoning", "internet of things"],
+        "roles": ["automated reasoning", "internet of things"]
+    },
+    "Open Terminal (private beta)": {
+        "description": [
+            "Desktop-based application for quick access to financial data."
+        ],
+        "date": "2020-",
+        "url": "",
+        "tags": ["finance"],
+        "roles": ["finance"]
     },
     "EQZEN": {
         "description": [
-            "EQZEN is a simple stock portfolio tracker; collect all your investments in one place; track price and performance; manage portfolio allocation and weighting; share read-only portfolio with friend or client.",
-            "In development: command-based search for quick access to company fundamentals and price data; pivot towards market overview dashboard (with less focus on portfolio management)."
+            "Web-based platform to manage multiple stock portfolios."
         ],
         "date": "2018-",
         "url": "https://eqzen.com",
-        "tags": ["productivity", "financial services"],
+        "tags": ["productivity", "finance"],
         "roles": ["productivity", "finance"]
     },
     "LearnHub.io": {
         "description": [
-            "LearnHub.io (previsouly Doolio) is a platform for self-learners; create pathways with learning resources for a subject; explore pathways created by others; showcase your skills and projects."
+            "Web-based platform and skill tracker for self-learners."
         ],
         "date": "2018-",
         "url": "https://learnhub.io",
-        "tags": ["education", "community"],
+        "tags": ["online learning", "personal development"],
         "roles": ["online learning", "personal development"]
     },
     "Holans": {
         "description": [
-            "Holans is a nutrition supplement available in Sweden."
+            "Nutrition supplement product (for sale in Sweden and Norway)"
         ],
         "date": "2014-",
         "url": "http://holans.com",
-        "tags": ["health", "retail"],
+        "tags": ["nutrition supplement", "fitness"],
         "roles": ["nutrition supplement", "fitness"]
     },
     "Give Trees (closed)": {
         "description": [
-            "Give Trees (previously Plant for Earth) is an initiative to fight deforestation; plant trees using mobile application; earnings donated to various tree-planting non-profit organisations."]
+            "Mobile-based applications and games targeting charitable donations (Android and iOS, both discontinued)."]
         ,
         "date": "2014-2017",
         "url": "https://givetrees.co",
-        "tags": ["mobile"],
+        "tags": ["mobile application", "environment"],
         "roles": ["mobile application", "environment"]
-    },
+    }
     // "Doolio": {
     //     "description": [
     //         "Doolio was a skill tracker and public database with skills."
@@ -54,18 +62,18 @@
     //     "tags": ["productivity", "community"],
     //     "roles": []
     // },
-    "A Python Primer and Cheat Sheet": {
-        "description": [],
-        "date": "",
-        "url": "https://michaelsjoeberg.github.io/A-Python-Primer-and-Cheat-Sheet/",
-        "tags": [],
-        "roles": []
-    },
-    "A Scala Primer and Cheat Sheet": {
-        "description": [],
-        "date": "",
-        "url": "https://michaelsjoeberg.github.io/A-Scala-Primer-and-Cheat-Sheet/",
-        "tags": [],
-        "roles": []
-    }
+    // "A Python Primer and Cheat Sheet": {
+    //     "description": [],
+    //     "date": "",
+    //     "url": "https://michaelsjoeberg.github.io/A-Python-Primer-and-Cheat-Sheet/",
+    //     "tags": [],
+    //     "roles": []
+    // },
+    // "A Scala Primer and Cheat Sheet": {
+    //     "description": [],
+    //     "date": "",
+    //     "url": "https://michaelsjoeberg.github.io/A-Scala-Primer-and-Cheat-Sheet/",
+    //     "tags": [],
+    //     "roles": []
+    // }
 }
