@@ -12,7 +12,7 @@ class PagesController < ApplicationController
         @steps = @typewriter.length
 
         # read most recent post
-        json_file = File.read(Rails.public_path + 'posts.json')
+        json_file = File.read(Rails.public_path + 'writing.json')
         @posts = JSON.parse(json_file)
         #@posts = Dir.entries(Rails.public_path + 'posts/').drop(2).sort_by { | number | -number[0..-4].to_i }
         
@@ -50,13 +50,13 @@ class PagesController < ApplicationController
         end
     end
 
-    # GET /posts
-    def posts
-        @route_path = "posts"
-        @meta_title = "Posts"
+    # # GET /writing
+    def writing
+        @route_path = "writing"
+        @meta_title = "Writing"
         @post = params[:post]
 
-        json_file = File.read(Rails.public_path + 'posts.json')
+        json_file = File.read(Rails.public_path + 'writing.json')
         @posts = JSON.parse(json_file)
 
         #@public_path = Rails.public_path
@@ -82,6 +82,39 @@ class PagesController < ApplicationController
             end
         end
     end
+
+    # # GET /posts
+    # def posts
+    #     @route_path = "posts"
+    #     @meta_title = "Posts"
+    #     @post = params[:post]
+
+    #     json_file = File.read(Rails.public_path + 'posts.json')
+    #     @posts = JSON.parse(json_file)
+
+    #     #@public_path = Rails.public_path
+
+    #     unless (@post.nil?)
+    #         @file = @post + '.md'
+    #         @date = @post
+    #         @title = @posts[@date]['title']
+    #         @lines = File.readlines(Rails.public_path + 'posts/' + @file)
+
+    #         # override meta
+    #         @meta_title = @title
+    #         #@meta_description = @first_paragraph
+    #     else
+    #         @posts_array = Hash.new
+    #         @posts.keys.each do |post|
+    #             @file = post + '.md'
+    #             @date = post
+    #             @title = @posts[@date]['title']
+    #             @tags = @posts[@date]['tags']
+
+    #             @posts_array[@date] = { title: @title, tags: @tags,  }
+    #         end
+    #     end
+    # end
 
     # GET /about
     def about
