@@ -21,7 +21,7 @@
         <!-- description -->
         <div class="col-12 col-md-8 text-center mt-3 mt-md-5">
             <% if @description.nil? %>
-                <p class="font-size-medium mb-0">No description (is Twitter down?)</p>
+                <p class="font-size-medium mb-0">Hmm... no description (Twitter down?)</p>
             <% else %>
                 <p class="font-size-medium mb-0">
                     <% @description.split().each do |word| %>
