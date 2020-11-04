@@ -1,0 +1,112 @@
+<%= render 'navigation' %>
+
+<div class="container p-md-5 p-sm-3">
+    
+    <!-- render post -->
+    <% if @post != nil %>
+    <div class="row justify-content-center">
+        <!-- title -->
+        <div class="col-12 col-md-10">
+            <h1 class="font-family-serif font-weight-bold">
+                <a href="/<%= @route_path %>/<%= @date %>"><%= @title %></a>
+            </h1>
+            <!-- date -->
+            <p class="text-muted mb-0">
+                <%= Date.parse(@date).strftime("%B %d, %Y") %>
+            </p>
+        </div>
+        <div class="col-12 col-md-10 my-3">
+            <div class="divider--bold"></div>
+        </div>
+        <!-- body -->
+        <div class="col-12 col-md-10">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-12 font-family-serif p-0">
+                        <% @lines.drop(3).each do |line| %>
+                            <%= CommonMarker.render_html(line).html_safe %>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-10 my-3">
+            <div class="divider"></div>
+        </div>
+    </div>
+    <!-- browse all -->
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 text-md-center">
+            <p class="m-0"><a href="/writing">Browse all posts</a></p>
+        </div>
+    </div>
+
+    <!-- else render all posts -->
+    <% else %>
+        <!-- header -->
+        <div class="row justify-content-center mb-3">
+            <div class="col-12 col-md-5">
+                <h1><%= @meta_title %></h1>
+            </div>
+            <div class="col-12 col-md-5 text-md-right">
+                <input id="search" class="pl-3" name="search" placeholder="Search" type="text" data-list=".list" autocomplete="off" style="margin-top:9px;min-width:100%;">
+            </div>
+        </div>
+        <!-- summary -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 hidden-until-lg">
+                <div class="divider"></div>
+            </div>
+            <div class="col-12 col-md-10 mt-lg-3" style="column-count: 1;">
+                <p class="font-family-serif mb-3">I sometimes write about various things, mainly as notes on technology, programming, and investing. This is a collection of writings.</p>
+            </div>
+        </div>
+        <!-- render posts -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="container-fluid">
+                    <div class="row list" style="border:1px solid rgba(23, 23, 23, 0.05);">
+                        
+                        <% @posts_array.keys.each do |post| %>
+
+                        <!-- header -->
+                        <% if post.equal?(@posts_array.first) %>
+                        <% @header = Date.parse(post).strftime("%Y") %>
+                        <li class="list_header col-12 mb-3" style="background:rgba(23, 23, 23, 0.05);">
+                            <p class="mt-2 mb-2"><%= @header %></p>
+                        </li>
+                        <% end %>
+
+                        <!-- update header -->
+                        <% if Date.parse(post).strftime("%Y") != @header %>
+                        <% @header = post[0..3] %>
+                        <li class="list_header col-12 mb-3" style="background:rgba(23, 23, 23, 0.05);">
+                            <p class="mt-2 mb-2"><%= @header %></p>
+                        </li>
+                        <% end %>
+
+                        <li class="col-12 mb-3">
+                            <div class="container-fluid p-0">
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                        <a href="/<%= @route_path %>/<%= post %>">
+                                            <%= @posts_array[post][:title] %>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-4 text-md-right">
+                                        <span class="text-muted m-0">
+                                            <%= Date.parse(post).strftime("%B %d, %Y") %>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% end %>
+</div>
+
+<%= render 'footer' %> 
