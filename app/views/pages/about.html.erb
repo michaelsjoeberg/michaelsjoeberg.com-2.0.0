@@ -1,7 +1,7 @@
 <%= render 'navigation' %>
 <%= render 'navigation_about' %>
 
-<div class="container-fluid p-md-5 p-sm-3">
+<div class="container p-md-5 p-sm-3">
     
     <!-- header -->
     <div class="row justify-content-center mb-3">
@@ -15,20 +15,20 @@
 
     <!-- summary -->
     <div class="row justify-content-center mb-3">
-        <div class="col-12 col-md-10 hidden-until-lg">
+        <!-- <div class="col-12 col-md-10 hidden-until-lg">
             <h3><%= image_tag "banner.jpg", :class => "m-0", :style => "max-width:100%;" %></h3>
-        </div>
-        <div class="col-12 col-md-10 mt-3 hidden-until-lg">
+        </div> -->
+        <!-- <div class="col-12 col-md-10 mt-3 hidden-until-lg">
             <div class="divider"></div>
-        </div>
-        <div class="col-12 col-md-10 mt-lg-3" style="column-count: 2;">
-            <p class="font-family-serif mb-3">I like to build things -- idea to product -- and often find myself working on new projects to solve some problem, but also for fun or to develop new interests (but mostly for fun!).</p>
+        </div> -->
+        <div class="col-12 col-md-10" style="column-count: 2;">
+            <p class="font-family-serif mb-3">I like to build things -- idea stage to product launch -- and often find myself working on new projects.</p>
 
-            <p class="font-family-serif mb-3">I take a generalist approach to work and personal development, where my productive hours typically are divided between: 1. working on projects, solving problems, and developing new skills; 2. reading, mostly technical subjects, economics and finance, and natural science in general (in particular space science and evolutionary biology); 3. physical exercise, such as mountain biking, road cycling, swimming, and lifting weights.</p>
+            <p class="font-family-serif mb-3">I take a generalist approach to work and personal development, awake hours typically split between: 1. working on projects, programming, and developing new skills; 2. reading, mostly technical subjects, but also economics and finance; 3. physical exercise, such as mountain biking, road cycling, swimming, and weights.</p>
 
             <p class="font-family-serif mb-3">I speak Swedish, Norwegian, and English, and understand some Spanish and German.</p>
 
-            <p class="font-family-serif mb-0">
+            <!-- <p class="font-family-serif mb-0">
                 <span class="font-weight-bold">Now: </span>
                 <% if @description.nil? %>
                     <a href="https://twitter.com/sjoebergco" target="_blank">Follow me on Twitter</a>
@@ -43,7 +43,7 @@
                         <% end %>
                     <% end %>
                 <% end %>
-            </p>
+            </p> -->
         </div>
         <div class="col-12 col-md-10 mt-3">
             <div class="divider"></div>
@@ -68,7 +68,11 @@
                 <!-- title -->
                 <div class="col-12 col-md-10 mb-3">
                     <h2>
+                        <% if @projects[project]['url'] != "" %>
                         <a href="<%= @projects[project]['url'] %>" target="_blank"><%= project %></a>
+                        <% else %>
+                            <%= project %>
+                        <% end %>
                     </h2>
                     <!-- roles -->
                     <% if @projects[project]['roles'] != [] %>
@@ -76,7 +80,7 @@
                         <% @projects[project]['roles'].each do |role| %>
                             <span><%= role.capitalize %><% unless role.equal?(@projects[project]["roles"].last) %> / <% end %></span>
                         <% end %>
-                        <!-- <span class="float-right"><%= @projects[project]['date'].gsub('-', '-') %></span> -->
+                        <span class="text-muted float-right"><%= @projects[project]['date'].gsub('-', '-') %></span>
                     </p>
                     <% end %>
                     <!-- date -->
