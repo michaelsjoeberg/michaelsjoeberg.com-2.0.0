@@ -1,0 +1,131 @@
+<%= render 'navigation' %>
+
+<div class="row justify-content-center hidden-until-md">
+    <div class="col-12">
+        <nav class="navbar navbar-expand-md p-0 background--primary">
+            <ul class="navbar-nav mr-auto ml-auto">
+                <% @programming.keys.each do |category| %>
+                    <li class="nav-item">
+                        <a href="/<%= @route_path %>#<%= category %>" class="nav-link" data-turbolinks="false"><%= category.titleize %></a>
+                    </li>
+                <% end %>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="container-fluid p-md-5 p-sm-3">
+    
+    <!-- render file -->
+    <% if @content != nil %>
+    <div class="row justify-content-center mb-3">
+        <div class="col-12 col-md-10 mb-3">
+            <!-- title -->
+            <h3>
+                <a href="/<%= @route_path %>/<%= @category %>/<%= @group %>/<%= @file %>"><%= @file.gsub('-', ' ').titleize %></a>
+                <a href="https://twitter.com/intent/tweet" class="twitter-share-button" data-via="<%= @meta_author[1..99] %>"></a>
+            </h3>
+            <!-- navigation -->
+            <p class="m-0">
+                <a href="/<%= @route_path %>#<%= @category %>" data-turbolinks="false"><%= @category.titleize %></a> / <a href="/<%= @route_path %>#<%= @category %>_<%= @group.gsub('-', '_')%>" data-turbolinks="false"><%= @group.gsub('-', ' ').titleize %></a>
+            </p>
+        </div>
+        <div class="col-12 col-md-10 mb-3">
+            <pre class="prettyprint <%= @category %> p-3 mb-3"><%= @content %>
+            </pre>
+        </div>
+        <div class="col-12 col-md-10 text-md-center mb-3">
+            <p class="m-0">
+                <a href="<%= @url %><%= @group %>/<%= @file %><%= @format %>" target="_blank"><p class="m-0">View on GitHub</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- else render categories and groups -->
+    <% else %>
+        <!-- header -->
+        <div class="row justify-content-center mb-3">
+            <div class="col-12 col-md-5">
+                <h1><%= @meta_title %></h1>
+                <!-- <a href="/activity">
+                    <p class="m-0">Recent activity</p>
+                </a> -->
+            </div>
+            <div class="col-12 col-md-5 text-md-right">
+                <input id="search" class="pl-3" name="search" placeholder="Search" type="text" data-list=".list" autocomplete="off" style="margin-top:9px;min-width:100%;">
+            </div>
+            <div class="col-12 col-md-10 mt-3">
+                <div class="divider"></div>
+            </div>
+        </div>
+        <% @programming.keys.each do |category| %>
+        <div class="row justify-content-center mb-3">
+            <!-- title -->
+            <div class="col-12 col-md-10 mb-3">
+                <h2 id="<%= category %>" class="font-weight-bold">
+                    <a href="#<%= category %>" data-turbolinks="false"><%= category.titleize %></a>
+                </h2>
+            </div>
+            <!-- file list -->
+            <div class="col-12 col-md-10">
+                <div class="container-fluid">
+                    <div class="row list" style="border:1px solid rgba(23, 23, 23, 0.05);">
+                    <% @programming[category].keys.each do |group| %>
+                        <!-- header -->
+                        <li class="list_header col-12 mb-3" style="background:rgba(23, 23, 23, 0.05);">
+                            <p id="<%= category %>_<%= group.gsub('-', '_') %>" class="mt-2 mb-2"><%= group.titleize %></p>
+                        </li>
+                        <% if @programming[category][group]["files"].include? "intro" %>
+                            <% @programming[category][group]["files"][1..@programming[category][group]["files"].length()] = @programming[category][group]["files"][1..@programming[category][group]["files"].length()].sort! %>
+                        <% else %>
+                            <% @programming[category][group]["files"] = @programming[category][group]["files"].sort! %>
+                        <% end %>
+                        <% @programming[category][group]["files"].each do |file| %>
+                        <!-- file -->
+                        <li class="col-6 col-md-4 list-item mb-3">
+                            <a href="/<%= @route_path %>/<%= category %>/<%= group %>/<%= file %>">
+                                <span><%= file.titleize %></span>
+                            </a>
+                        </li>
+                        <% end %>
+                    <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% end %>
+    <% end %>
+</div>
+
+<!-- leave this on each page to avoid loading issue -->
+<!-- <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script> -->
+
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
+    });
+</script> -->
+
+
+<!-- twitter share button -->
+<!-- <script>
+    window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+        return t;
+    }(document, "script", "twitter-wjs"));
+    twttr.widgets.load();
+</script> -->
+
+<%= render 'footer' %> 
