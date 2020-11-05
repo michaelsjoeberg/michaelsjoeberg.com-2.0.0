@@ -38,12 +38,15 @@ gem 'commonmarker'
 #gem 'github-markup', '~> 3.0.4'
 
 # github security notifications
-gem 'actionview', '>= 5.2.4.2'
+gem "actionview", ">= 5.2.4.4"
 gem 'nokogiri', '>= 1.10.8'
 gem 'rack', '>= 2.0.8'
 gem 'puma', '>= 3.12.4'
 gem 'loofah', '>= 2.3.1'
 gem 'rubyzip', '>= 1.3.0'
+gem "activesupport", ">= 5.2.4.3"
+gem "activestorage", ">= 5.2.4.3"
+gem "actionpack", ">= 5.2.4.3"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
