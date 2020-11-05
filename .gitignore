@@ -33,3 +33,6 @@
 README_PRIVATE.md
 .DS_Store
 public/posts/_DRAFT*.md
+_OLD/*
+_VERY_OLD/*
+michaelsjoeberg.com-2.0.0/tmp/*
