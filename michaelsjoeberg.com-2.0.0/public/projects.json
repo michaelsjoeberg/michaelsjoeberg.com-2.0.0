@@ -1,0 +1,79 @@
+{   
+    "Evert.AI (in development)": {
+        "description": [
+            "Deployment and hosting platform for knowledge databases (automated reasoning applications)."
+        ],
+        "date": "2020-",
+        "url": "http://evert.ai",
+        "tags": ["automated reasoning", "internet of things"],
+        "roles": ["automated reasoning", "internet of things"]
+    },
+    "Open Terminal (private beta)": {
+        "description": [
+            "Desktop-based application for quick access to financial data."
+        ],
+        "date": "2020-",
+        "url": "",
+        "tags": ["finance"],
+        "roles": ["finance"]
+    },
+    "EQZEN": {
+        "description": [
+            "Web-based platform to manage multiple stock portfolios."
+        ],
+        "date": "2018-",
+        "url": "https://eqzen.com",
+        "tags": ["productivity", "finance"],
+        "roles": ["productivity", "finance"]
+    },
+    "LearnHub.io": {
+        "description": [
+            "Web-based platform and skill tracker for self-learners."
+        ],
+        "date": "2018-",
+        "url": "https://learnhub.io",
+        "tags": ["online learning", "personal development"],
+        "roles": ["online learning", "personal development"]
+    },
+    "Holans": {
+        "description": [
+            "Nutrition supplement product (for sale in Sweden and Norway)"
+        ],
+        "date": "2014-",
+        "url": "http://holans.com",
+        "tags": ["nutrition supplement", "fitness"],
+        "roles": ["nutrition supplement", "fitness"]
+    },
+    "Give Trees (closed)": {
+        "description": [
+            "Mobile-based applications and games targeting charitable donations (Android and iOS, both discontinued)."]
+        ,
+        "date": "2014-2017",
+        "url": "https://givetrees.co",
+        "tags": ["mobile application", "environment"],
+        "roles": ["mobile application", "environment"]
+    }
+    // "Doolio": {
+    //     "description": [
+    //         "Doolio was a skill tracker and public database with skills."
+    //     ],
+    //     "date": "",
+    //     "url": "https://doolio.co",
+    //     "tags": ["productivity", "community"],
+    //     "roles": []
+    // },
+    // "A Python Primer and Cheat Sheet": {
+    //     "description": [],
+    //     "date": "",
+    //     "url": "https://michaelsjoeberg.github.io/A-Python-Primer-and-Cheat-Sheet/",
+    //     "tags": [],
+    //     "roles": []
+    // },
+    // "A Scala Primer and Cheat Sheet": {
+    //     "description": [],
+    //     "date": "",
+    //     "url": "https://michaelsjoeberg.github.io/A-Scala-Primer-and-Cheat-Sheet/",
+    //     "tags": [],
+    //     "roles": []
+    // }
+}
